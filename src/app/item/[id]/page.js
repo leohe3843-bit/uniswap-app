@@ -48,7 +48,7 @@ export default function ItemDetailPage() {
         onClick={() => router.back()}
         className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 mb-6 font-medium"
       >
-        â {t('detailBack')}
+        ← {t('detailBack')}
       </button>
 
       <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
@@ -59,7 +59,7 @@ export default function ItemDetailPage() {
           </div>
         ) : (
           <div className="aspect-video bg-gray-50 flex items-center justify-center text-6xl text-gray-200">
-            {cat?.icon || 'ð¦'}
+            {cat?.icon || '📦'}
           </div>
         )}
 
@@ -82,11 +82,11 @@ export default function ItemDetailPage() {
             </span>
             {school && (
               <span className="badge bg-brand-50 text-brand-700">
-                ð {school.short} Â· {school.city}
+                📍 {school.short} · {school.city}
               </span>
             )}
             <span className="badge bg-gray-50 text-gray-500">
-              ð {date}
+              📅 {date}
             </span>
           </div>
 
@@ -112,16 +112,16 @@ export default function ItemDetailPage() {
                 </div>
               </div>
 
-              {/* Contact â in MVP, show a message prompt */}
+              {/* Contact — in MVP, show a message prompt */}
               <button
                 onClick={() => alert(
                   item.profiles?.phone
-                    ? `ð± ${item.profiles.phone}`
-                    : 'Contact feature coming soon / èç³»åè½å³å°ä¸çº¿'
+                    ? `📱 ${item.profiles.phone}`
+                    : 'Contact feature coming soon / 联系功能即将上线'
                 )}
                 className="btn-primary text-sm !py-2.5"
               >
-                ð¬ {t('detailContact')}
+                💬 {t('detailContact')}
               </button>
             </div>
           </div>
