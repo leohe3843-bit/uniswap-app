@@ -28,7 +28,7 @@ export default function ItemCard({ item }) {
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-4xl text-gray-300">
-            {cat?.icon || 'ð¦'}
+            {cat?.icon || '📦'}
           </div>
         )}
         {/* Price tag */}
@@ -56,7 +56,7 @@ export default function ItemCard({ item }) {
         </h3>
         <div className="mt-2 flex items-center justify-between text-xs text-gray-400">
           <span className="flex items-center gap-1">
-            ð {item.profiles?.school || item.school || ''}
+            📍 {item.profiles?.school || item.school || ''}
           </span>
           <span>{timeAgo(item.created_at)}</span>
         </div>
