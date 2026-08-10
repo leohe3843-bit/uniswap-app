@@ -80,7 +80,7 @@ export default function LoginPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">{t('loginEmail')}</label>
                 <div className="flex items-stretch border border-gray-200 rounded-xl overflow-hidden focus-within:border-brand-500 focus-within:ring-4 focus-within:ring-brand-100 transition-all">
                   <div className="flex items-center gap-1.5 px-4 bg-gray-50 border-r border-gray-200 text-sm text-gray-500">
-                    <span className="text-lg">ð§</span>
+                    <span className="text-lg">📧</span>
                   </div>
                   <input
                     type="email"
@@ -92,7 +92,7 @@ export default function LoginPage() {
                   />
                 </div>
               </div>
-              <p className="text-xs text-gray-400 flex items-center gap-1">ð {t('loginHint')}</p>
+              <p className="text-xs text-gray-400 flex items-center gap-1">🔒 {t('loginHint')}</p>
               {error && <p className="text-sm text-red-500">{error}</p>}
               <button
                 type="submit"
@@ -107,7 +107,7 @@ export default function LoginPage() {
           {/* Step: Link Sent */}
           {step === 'sent' && (
             <div className="text-center space-y-5">
-              <div className="text-5xl mb-2">ð¬</div>
+              <div className="text-5xl mb-2">📬</div>
               <h2 className="text-lg font-bold">{t('loginSentTitle')}</h2>
               <p className="text-sm text-gray-500">
                 {t('loginSentDesc')} <strong className="text-gray-700">{email}</strong>
@@ -118,7 +118,7 @@ export default function LoginPage() {
                 onClick={() => { setStep('email'); setError(''); }}
                 className="w-full text-center text-sm text-gray-400 hover:text-gray-600 mt-4"
               >
-                â {t('loginBackToEmail')}
+                ← {t('loginBackToEmail')}
               </button>
             </div>
           )}
@@ -127,7 +127,7 @@ export default function LoginPage() {
           {step === 'profile' && (
             <form onSubmit={handleProfile} className="space-y-5">
               <div className="text-center mb-4">
-                <div className="text-4xl mb-2">ð</div>
+                <div className="text-4xl mb-2">👋</div>
                 <h2 className="text-lg font-bold">{t('profileTitle')}</h2>
               </div>
               <div>
