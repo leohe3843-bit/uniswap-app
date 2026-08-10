@@ -45,10 +45,10 @@ export default function HomePage() {
           {/* USP strip */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8">
             {[
-              { icon: 'ð°', title: t('uspFree'), desc: t('uspFreeDesc'), color: 'bg-blue-50 border-blue-100' },
-              { icon: 'ð', title: t('uspCampus'), desc: t('uspCampusDesc'), color: 'bg-amber-50 border-amber-100' },
-              { icon: 'ð¡ï¸', title: t('uspPrivacy'), desc: t('uspPrivacyDesc'), color: 'bg-emerald-50 border-emerald-100' },
-              { icon: 'ð¦', title: t('uspSeason'), desc: t('uspSeasonDesc'), color: 'bg-purple-50 border-purple-100' },
+              { icon: '💰', title: t('uspFree'), desc: t('uspFreeDesc'), color: 'bg-blue-50 border-blue-100' },
+              { icon: '🎓', title: t('uspCampus'), desc: t('uspCampusDesc'), color: 'bg-amber-50 border-amber-100' },
+              { icon: '🛡️', title: t('uspPrivacy'), desc: t('uspPrivacyDesc'), color: 'bg-emerald-50 border-emerald-100' },
+              { icon: '📦', title: t('uspSeason'), desc: t('uspSeasonDesc'), color: 'bg-purple-50 border-purple-100' },
             ].map((usp, i) => (
               <div key={i} className={`${usp.color} border rounded-xl p-4 text-left`}>
                 <div className="text-2xl mb-2">{usp.icon}</div>
@@ -66,7 +66,7 @@ export default function HomePage() {
           {/* Search bar */}
           <div className="flex gap-3 mb-4">
             <div className="flex-1 relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">ð</span>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
               <input
                 type="text"
                 value={search}
@@ -123,7 +123,7 @@ export default function HomePage() {
           </div>
         ) : items.length === 0 ? (
           <div className="text-center py-20">
-            <div className="text-6xl mb-4">ð­</div>
+            <div className="text-6xl mb-4">📭</div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">{t('noItems')}</h3>
             <p className="text-gray-500">{t('noItemsSub')}</p>
           </div>
