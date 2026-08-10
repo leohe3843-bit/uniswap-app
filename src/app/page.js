@@ -1,141 +1,211 @@
 'use client';
-import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useLang, CATEGORIES, SCHOOLS, catI18nKey } from '../lib/i18n';
-import { fetchItems } from '../lib/supabase';
-import ItemCard from '../components/ItemCard';
 
 export default function HomePage() {
   const { t } = useLang();
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [category, setCategory] = useState('all');
-  const [school, setSchool] = useState('');
-  const [search, setSearch] = useState('');
-  const [searchDebounce, setSearchDebounce] = useState('');
 
-  // Debounce search
-  useEffect(() => {
-    const timer = setTimeout(() => setSearchDebounce(search), 300);
-    return () => clearTimeout(timer);
-  }, [search]);
+  const philosophies = [
+    { icon: '🤝', titleKey: 'phil1Title', descKey: 'phil1Desc', bg: 'bg-blue-50' },
+    { icon: '🌱', titleKey: 'phil2Title', descKey: 'phil2Desc', bg: 'bg-emerald-50' },
+    { icon: '🏘️', titleKey: 'phil3Title', descKey: 'phil3Desc', bg: 'bg-purple-50' },
+    { icon: '🔍', titleKey: 'phil4Title', descKey: 'phil4Desc', bg: 'bg-amber-50' },
+  ];
 
-  // Fetch items
-  useEffect(() => {
-    setLoading(true);
-    fetchItems({
-      category: category !== 'all' ? category : undefined,
-      search: searchDebounce || undefined,
-      school: school || undefined,
-    }).then(({ data }) => {
-      setItems(data);
-      setLoading(false);
-    });
-  }, [category, searchDebounce, school]);
+  const advantages = [
+    { icon: '💰', titleKey: 'adv1Title', descKey: 'adv1Desc' },
+    { icon: '🎯', titleKey: 'adv2Title', descKey: 'adv2Desc' },
+    { icon: '🛡️', titleKey: 'adv3Title', descKey: 'adv3Desc' },
+    { icon: '⚡', titleKey: 'adv4Title', descKey: 'adv4Desc' },
+    { icon: '🏫', titleKey: 'adv5Title', descKey: 'adv5Desc' },
+    { icon: '📦', titleKey: 'adv6Title', descKey: 'adv6Desc' },
+  ];
+
+  const steps = [
+    { num: '01', icon: '📧', titleKey: 'how1Title', descKey: 'how1Desc' },
+    { num: '02', icon: '📋', titleKey: 'how2Title', descKey: 'how2Desc' },
+    { num: '03', icon: '🤝', titleKey: 'how3Title', descKey: 'how3Desc' },
+  ];
 
   return (
     <div>
-      {/* Hero with USP */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 px-4 sm:px-6 pt-12 pb-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-gray-900 mb-3">
+      {/* ===== Hero Section ===== */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+            🎓 {t('heroTagline')}
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             {t('homeTitle')}
           </h1>
-          <p className="text-gray-500 text-lg mb-8">{t('homeSubtitle')}</p>
+          <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+            {t('heroDesc')}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/browse" className="btn-primary text-base !py-4 !px-8 shadow-lg shadow-brand-200">
+              🔍 {t('ctaBrowse')}
+            </Link>
+            <Link href="/post" className="inline-flex items-center gap-2 text-base font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl px-8 py-4 hover:border-brand-300 hover:text-brand-600 transition-all shadow-sm">
+              ➕ {t('ctaPost')}
+            </Link>
+          </div>
+        </div>
+        {/* Decorative gradient blob */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-100 rounded-full blur-3xl opacity-30 pointer-events-none" />
+        <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-amber-100 rounded-full blur-3xl opacity-30 pointer-events-none" />
+      </section>
 
-          {/* USP strip */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8">
+      {/* ===== USP Banner ===== */}
+      <section className="border-y border-gray-100 bg-gray-50/50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: '💰', title: t('uspFree'), desc: t('uspFreeDesc'), color: 'bg-blue-50 border-blue-100' },
-              { icon: '🎓', title: t('uspCampus'), desc: t('uspCampusDesc'), color: 'bg-amber-50 border-amber-100' },
-              { icon: '🛡️', title: t('uspPrivacy'), desc: t('uspPrivacyDesc'), color: 'bg-emerald-50 border-emerald-100' },
-              { icon: '📦', title: t('uspSeason'), desc: t('uspSeasonDesc'), color: 'bg-purple-50 border-purple-100' },
-            ].map((usp, i) => (
-              <div key={i} className={`${usp.color} border rounded-xl p-4 text-left`}>
-                <div className="text-2xl mb-2">{usp.icon}</div>
-                <div className="font-bold text-sm text-gray-900">{usp.title}</div>
-                <div className="text-xs text-gray-500 mt-1">{usp.desc}</div>
+              { icon: '💰', titleKey: 'uspFree', descKey: 'uspFreeDesc', bg: 'bg-amber-50 border-amber-100' },
+              { icon: '🎓', titleKey: 'uspCampus', descKey: 'uspCampusDesc', bg: 'bg-green-50 border-green-100' },
+              { icon: '🛡️', titleKey: 'uspPrivacy', descKey: 'uspPrivacyDesc', bg: 'bg-purple-50 border-purple-100' },
+              { icon: '📦', titleKey: 'uspSeason', descKey: 'uspSeasonDesc', bg: 'bg-blue-50 border-blue-100' },
+            ].map((item, i) => (
+              <div key={i} className={`rounded-2xl border p-5 ${item.bg}`}>
+                <div className="text-2xl mb-3">{item.icon}</div>
+                <div className="font-bold text-gray-900 mb-1">{t(item.titleKey)}</div>
+                <div className="text-sm text-gray-500">{t(item.descKey)}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Search & Filters */}
-      <section className="sticky top-[68px] z-40 bg-white/90 backdrop-blur-lg border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
-          {/* Search bar */}
-          <div className="flex gap-3 mb-4">
-            <div className="flex-1 relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
-              <input
-                type="text"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                placeholder={t('searchPlaceholder')}
-                className="input-field !pl-11"
-              />
-            </div>
-            <select
-              value={school}
-              onChange={e => setSchool(e.target.value)}
-              className="input-field !w-auto min-w-[140px]"
-            >
-              <option value="">{t('schoolAll')}</option>
-              {SCHOOLS.map(s => (
-                <option key={s.key} value={s.key}>{s.short}</option>
-              ))}
-            </select>
+      {/* ===== Philosophy Section ===== */}
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">{t('philosophyTitle')}</h2>
+            <p className="text-lg text-gray-500 max-w-xl mx-auto">{t('philosophySubtitle')}</p>
           </div>
-
-          {/* Category pills */}
-          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
-            {CATEGORIES.map(cat => (
-              <button
-                key={cat.key}
-                onClick={() => setCategory(cat.key)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 ${
-                  category === cat.key
-                    ? 'bg-brand-600 text-white shadow-sm'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                }`}
-              >
-                <span>{cat.icon}</span>
-                {t(catI18nKey(cat.key))}
-              </button>
+          <div className="grid md:grid-cols-2 gap-6">
+            {philosophies.map((phil, i) => (
+              <div key={i} className={`${phil.bg} rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow`}>
+                <div className="text-4xl mb-4">{phil.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{t(phil.titleKey)}</h3>
+                <p className="text-gray-600 leading-relaxed">{t(phil.descKey)}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Items Grid */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-        {loading ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="bg-white rounded-2xl overflow-hidden border border-gray-100">
-                <div className="aspect-[4/3] bg-gray-100 animate-pulse" />
-                <div className="p-4 space-y-2">
-                  <div className="h-4 bg-gray-100 rounded animate-pulse w-3/4" />
-                  <div className="h-3 bg-gray-100 rounded animate-pulse w-1/2" />
+      {/* ===== Advantages Section ===== */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">{t('advantageTitle')}</h2>
+            <p className="text-lg text-gray-500 max-w-xl mx-auto">{t('advantageSubtitle')}</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {advantages.map((adv, i) => (
+              <div key={i} className="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl mb-5">{adv.icon}</div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t(adv.titleKey)}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{t(adv.descKey)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== How It Works ===== */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">{t('howTitle')}</h2>
+            <p className="text-lg text-gray-500">{t('howSubtitle')}</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 relative">
+            {/* Connecting line (desktop) */}
+            <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-0.5 bg-brand-100" />
+            {steps.map((step, i) => (
+              <div key={i} className="text-center relative">
+                <div className="w-16 h-16 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5 relative z-10 border-4 border-white">
+                  {step.icon}
                 </div>
+                <div className="text-xs font-bold text-brand-400 uppercase tracking-widest mb-2">Step {step.num}</div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t(step.titleKey)}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{t(step.descKey)}</p>
               </div>
             ))}
           </div>
-        ) : items.length === 0 ? (
-          <div className="text-center py-20">
-            <div className="text-6xl mb-4">📭</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">{t('noItems')}</h3>
-            <p className="text-gray-500">{t('noItemsSub')}</p>
+        </div>
+      </section>
+
+      {/* ===== Categories Preview ===== */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">{t('categoryTitle')}</h2>
+            <p className="text-lg text-gray-500">{t('categorySubtitle')}</p>
           </div>
-        ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {items.map((item, i) => (
-              <div key={item.id} className="animate-fade-in" style={{ animationDelay: `${i * 0.05}s` }}>
-                <ItemCard item={item} />
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+            {CATEGORIES.filter(c => c.key !== 'all').map(cat => (
+              <Link
+                key={cat.key}
+                href={`/browse?category=${cat.key}`}
+                className="bg-white rounded-2xl border border-gray-100 p-5 text-center hover:shadow-lg hover:border-brand-200 hover:-translate-y-1 transition-all duration-200 group"
+              >
+                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">{cat.icon}</div>
+                <div className="text-sm font-semibold text-gray-600 group-hover:text-brand-600">{t(catI18nKey(cat.key))}</div>
+              </Link>
             ))}
           </div>
-        )}
+          <div className="text-center mt-8">
+            <Link href="/browse" className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700 transition-colors">
+              {t('ctaBrowse')} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Schools Section ===== */}
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">{t('schoolsSectionTitle')}</h2>
+            <p className="text-lg text-gray-500 max-w-xl mx-auto">{t('schoolsSectionDesc')}</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {SCHOOLS.map((school, i) => (
+              <Link
+                key={school.key}
+                href={`/browse?school=${school.key}`}
+                className="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-lg hover:border-brand-200 transition-all group"
+              >
+                <div className="text-5xl mb-4">{['🏛️', '🐢', '🔵'][i]}</div>
+                <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-brand-600">{school.label}</h3>
+                <p className="text-sm text-gray-500">📍 {school.city}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== CTA Section ===== */}
+      <section className="py-20 bg-brand-600 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 text-8xl">🎓</div>
+          <div className="absolute bottom-10 right-10 text-8xl">📦</div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl">🤝</div>
+        </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">{t('ctaTitle')}</h2>
+          <p className="text-lg text-brand-100 mb-10">{t('ctaDesc')}</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/browse" className="inline-flex items-center gap-2 bg-white text-brand-600 font-bold rounded-xl px-8 py-4 hover:bg-brand-50 transition-colors shadow-lg text-base">
+              🔍 {t('ctaBrowse')}
+            </Link>
+            <Link href="/login" className="inline-flex items-center gap-2 text-white border-2 border-white/30 font-bold rounded-xl px-8 py-4 hover:bg-white/10 transition-colors text-base">
+              🚀 {t('navLogin')}
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
