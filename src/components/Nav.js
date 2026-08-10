@@ -21,6 +21,7 @@ export default function Nav() {
 
   const links = [
     { href: '/', label: t('navHome'), icon: '🏠' },
+    { href: '/browse', label: t('navBrowse'), icon: '🔍' },
     { href: '/post', label: t('navPost'), icon: '➕', auth: true },
     { href: '/my-listings', label: t('navMyItems'), icon: '📋', auth: true },
   ];
