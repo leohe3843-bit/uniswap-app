@@ -46,6 +46,20 @@ function BrowseContent() {
         <p className="text-gray-500">{t('browseSubtitle')}</p>
       </div>
 
+      {/* Moving Season Banner */}
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-5 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-white">
+        <div className="flex items-center gap-3">
+          <span className="text-3xl">🔥</span>
+          <div>
+            <h3 className="font-bold text-lg">{t('movingBannerTitle')}</h3>
+            <p className="text-sm text-orange-100">{t('movingBannerDesc')}</p>
+          </div>
+        </div>
+        <button className="bg-white/20 backdrop-blur-sm text-white font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-white/30 transition-colors shrink-0 border border-white/20">
+          {t('movingBannerBtn')} →
+        </button>
+      </div>
+
       {/* Search + School filter */}
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <div className="flex-1 relative">
