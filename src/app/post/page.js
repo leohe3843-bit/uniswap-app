@@ -91,7 +91,7 @@ export default function PostPage() {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
         <div className="text-center animate-fade-in">
-          <div className="text-6xl mb-4">ð</div>
+          <div className="text-6xl mb-4">🎉</div>
           <h2 className="text-2xl font-bold text-gray-900">{t('postSuccess')}</h2>
         </div>
       </div>
@@ -124,12 +124,12 @@ export default function PostPage() {
                   onClick={(e) => { e.stopPropagation(); setPreview(null); setFile(null); }}
                   className="absolute top-3 right-3 bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/70"
                 >
-                  â
+                  ✕
                 </button>
               </div>
             ) : (
               <div className="py-16 text-center">
-                <div className="text-4xl mb-3">ð·</div>
+                <div className="text-4xl mb-3">📷</div>
                 <p className="text-sm text-gray-500">{t('postImageHint')}</p>
               </div>
             )}
