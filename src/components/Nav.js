@@ -20,9 +20,9 @@ export default function Nav() {
   }, []);
 
   const links = [
-    { href: '/', label: t('navHome'), icon: 'ð ' },
-    { href: '/post', label: t('navPost'), icon: 'â', auth: true },
-    { href: '/my-listings', label: t('navMyItems'), icon: 'ð', auth: true },
+    { href: '/', label: t('navHome'), icon: '🏠' },
+    { href: '/post', label: t('navPost'), icon: '➕', auth: true },
+    { href: '/my-listings', label: t('navMyItems'), icon: '📋', auth: true },
   ];
 
   const isActive = (href) => pathname === href;
@@ -131,7 +131,7 @@ export default function Nav() {
               }}
               className="w-full text-left flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-red-500"
             >
-              <span className="text-lg">ð</span>
+              <span className="text-lg">👋</span>
               {t('navLogout')}
             </button>
           )}
