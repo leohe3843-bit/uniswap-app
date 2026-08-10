@@ -52,7 +52,7 @@ export default function MyListingsPage() {
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold text-gray-900">{t('myTitle')}</h1>
         <Link href="/post" className="btn-primary text-sm !py-2.5">
-          â {t('navPost')}
+          ➕ {t('navPost')}
         </Link>
       </div>
 
@@ -70,7 +70,7 @@ export default function MyListingsPage() {
         </div>
       ) : items.length === 0 ? (
         <div className="text-center py-20">
-          <div className="text-6xl mb-4">ð</div>
+          <div className="text-6xl mb-4">📝</div>
           <h3 className="text-xl font-bold text-gray-900 mb-2">{t('myEmpty')}</h3>
           <Link href="/post" className="btn-primary mt-4 inline-block">
             {t('myEmptyAction')}
@@ -93,7 +93,7 @@ export default function MyListingsPage() {
                     <img src={item.image_url} alt={item.title} className="w-full h-full object-cover" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-2xl text-gray-300">
-                      {cat?.icon || 'ð¦'}
+                      {cat?.icon || '📦'}
                     </div>
                   )}
                 </div>
@@ -107,7 +107,7 @@ export default function MyListingsPage() {
                         <span className="text-sm font-bold text-brand-600">
                           {item.price === 0 ? t('freeLabel') : `$${item.price}`}
                         </span>
-                        <span className="text-xs text-gray-400">Â·</span>
+                        <span className="text-xs text-gray-400">·</span>
                         <span className="text-xs text-gray-400">{cat?.icon} {t(catI18nKey(item.category))}</span>
                       </div>
                     </div>
