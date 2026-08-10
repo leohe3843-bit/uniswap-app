@@ -22,8 +22,10 @@ export default function Nav() {
   const links = [
     { href: '/', label: t('navHome'), icon: '🏠' },
     { href: '/browse', label: t('navBrowse'), icon: '🔍' },
+    { href: '/want-to-buy', label: t('navWantToBuy'), icon: '📝' },
     { href: '/post', label: t('navPost'), icon: '➕', auth: true },
     { href: '/my-listings', label: t('navMyItems'), icon: '📋', auth: true },
+    { href: '/safety', label: t('navSafety'), icon: '🛡️' },
   ];
 
   const isActive = (href) => pathname === href;
