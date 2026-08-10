@@ -5,108 +5,108 @@ const t = {
   zh: {
     // Nav
     brand: 'UniSwap',
-    navHome: 'é¦é¡µ',
-    navPost: 'åå¸',
-    navMyItems: 'æçåå',
-    navLogin: 'ç»å½',
-    navLogout: 'éåº',
+    navHome: '首页',
+    navPost: '发布',
+    navMyItems: '我的商品',
+    navLogin: '登录',
+    navLogout: '退出',
     langSwitch: 'EN',
 
     // Categories
-    catAll: 'å¨é¨',
-    catFurniture: 'å®¶å·',
-    catElectronics: 'çµå­äº§å',
-    catTextbooks: 'æç§ä¹¦',
-    catKitchen: 'å¨å·',
-    catClothing: 'æé¥°',
-    catTransport: 'äº¤éå·¥å·',
-    catDaily: 'çæ´»ç¨å',
-    catOther: 'å¶ä»',
+    catAll: '全部',
+    catFurniture: '家具',
+    catElectronics: '电子产品',
+    catTextbooks: '教科书',
+    catKitchen: '厨具',
+    catClothing: '服饰',
+    catTransport: '交通工具',
+    catDaily: '生活用品',
+    catOther: '其他',
 
     // Schools
-    schoolAll: 'å¨é¨å­¦æ ¡',
+    schoolAll: '全部学校',
     schoolJHU: 'Johns Hopkins',
     schoolUMD: 'UMD',
     schoolGU: 'Georgetown',
 
     // Home
-    homeTitle: 'æ ¡å­äºæï¼è½»æ¾æå®',
-    homeSubtitle: 'å¨ä½ çå­¦æ ¡å¨è¾¹æ¾å°æåç®çäºæå¥½ç©',
-    searchPlaceholder: 'æç´¢åå...',
-    noItems: 'ææ åå',
-    noItemsSub: 'æä¸ºç¬¬ä¸ä¸ªåå¸èå§ï¼',
-    freeLabel: 'åè´¹',
+    homeTitle: '校园二手，轻松搞定',
+    homeSubtitle: '在你的学校周边找到最划算的二手好物',
+    searchPlaceholder: '搜索商品...',
+    noItems: '暂无商品',
+    noItemsSub: '成为第一个发布者吧！',
+    freeLabel: '免费',
     priceUnit: '$',
 
     // USP banner
-    uspFree: 'é¶ä»£é',
-    uspFreeDesc: 'å®å¨åè´¹åå¸åæµè§',
-    uspCampus: 'æ ¡å­ä¸å±',
-    uspCampusDesc: 'åªé¢åçå­¦çç¤¾åº',
-    uspPrivacy: 'éç§ä¿æ¤',
-    uspPrivacyDesc: 'ç«åèå¤©ä¸æ´é²ä¸ªäººä¿¡æ¯',
-    uspSeason: 'æ¬å®¶å­£å¿å¤',
-    uspSeasonDesc: 'æ¯ä¸åºæ¸/å¼å­¦æ··è´§',
+    uspFree: '零佣金',
+    uspFreeDesc: '完全免费发布和浏览',
+    uspCampus: '校园专属',
+    uspCampusDesc: '只面向留学生社区',
+    uspPrivacy: '隐私保护',
+    uspPrivacyDesc: '站内聊天不暴露个人信息',
+    uspSeason: '搬家季必备',
+    uspSeasonDesc: '毕业出清/开学淘货',
 
     // Post
-    postTitle: 'åå¸åå',
-    postItemTitle: 'æ é¢',
-    postItemTitlePH: 'ä¾ï¼IKEA ä¹¦æ¡ 9ææ°',
-    postDesc: 'æè¿°',
-    postDescPH: 'ååç¶æãè´­ä¹°æ¶é´ãåè´§æ¹å¼ç­',
-    postPrice: 'ä»·æ ¼ ($)',
-    postPricePH: '0 = åè´¹',
-    postCategory: 'åç±»',
-    postSchool: 'å­¦æ ¡',
-    postImage: 'ä¸ä¼ å¾ç',
-    postImageHint: 'ç¹å»æææ½ä¸ä¼ ï¼æå¤§ 5MBï¼',
-    postSubmit: 'åå¸åå',
-    postSubmitting: 'åå¸ä¸­...',
-    postSuccess: 'åå¸æåï¼',
-    postSelectCategory: 'è¯·éæ©åç±»',
-    postSelectSchool: 'è¯·éæ©å­¦æ ¡',
+    postTitle: '发布商品',
+    postItemTitle: '标题',
+    postItemTitlePH: '例：IKEA 书桌 9成新',
+    postDesc: '描述',
+    postDescPH: '商品状态、购买时间、取货方式等',
+    postPrice: '价格 ($)',
+    postPricePH: '0 = 免费',
+    postCategory: '分类',
+    postSchool: '学校',
+    postImage: '上传图片',
+    postImageHint: '点击或拖拽上传（最大 5MB）',
+    postSubmit: '发布商品',
+    postSubmitting: '发布中...',
+    postSuccess: '发布成功！',
+    postSelectCategory: '请选择分类',
+    postSelectSchool: '请选择学校',
 
     // My items
-    myTitle: 'æçåå',
-    myEmpty: 'ä½ è¿æ²¡æåå¸ä»»ä½åå',
-    myEmptyAction: 'å»åå¸',
-    myOnline: 'å¨æ¶',
-    myOffline: 'å·²ä¸æ¶',
-    myToggleOn: 'ä¸æ¶',
-    myToggleOff: 'ä¸æ¶',
-    myDelete: 'å é¤',
-    myDeleteConfirm: 'ç¡®å®è¦å é¤è¿ä¸ªåååï¼',
+    myTitle: '我的商品',
+    myEmpty: '你还没有发布任何商品',
+    myEmptyAction: '去发布',
+    myOnline: '在架',
+    myOffline: '已下架',
+    myToggleOn: '上架',
+    myToggleOff: '下架',
+    myDelete: '删除',
+    myDeleteConfirm: '确定要删除这个商品吗？',
 
     // Login
-    loginTitle: 'ç»å½ / æ³¨å',
-    loginEmail: 'é®ç®±å°å',
-    loginEmailPH: 'è¾å¥ä½ çé®ç®±',
-    loginSendLink: 'åéç»å½é¾æ¥',
-    loginSending: 'åéä¸­...',
-    loginHint: 'æä»¬ä¼åéä¸å°åå«ç»å½é¾æ¥çé®ä»¶',
-    loginSentTitle: 'é®ä»¶å·²åéï¼',
-    loginSentDesc: 'è¯·æ¥çä½ çé®ç®±',
-    loginSentHint: 'ç¹å»é®ä»¶ä¸­çé¾æ¥å³å¯ç»å½ï¼é¾æ¥ä¼å¨24å°æ¶åå¤±æ',
-    loginBackToEmail: 'è¿åéæ°è¾å¥',
+    loginTitle: '登录 / 注册',
+    loginEmail: '邮箱地址',
+    loginEmailPH: '输入你的邮箱',
+    loginSendLink: '发送登录链接',
+    loginSending: '发送中...',
+    loginHint: '我们会发送一封包含登录链接的邮件',
+    loginSentTitle: '邮件已发送！',
+    loginSentDesc: '请查看你的邮箱',
+    loginSentHint: '点击邮件中的链接即可登录，链接会在24小时后失效',
+    loginBackToEmail: '返回重新输入',
 
     // Profile setup
-    profileTitle: 'å®åèµæ',
-    profileName: 'æµç§°',
-    profileNamePH: 'å¶ä»ç¨æ·çå°çåå­',
-    profileSchool: 'ä½ çå­¦æ ¡',
-    profileSave: 'ä¿å­',
+    profileTitle: '完善资料',
+    profileName: '昵称',
+    profileNamePH: '其他用户看到的名字',
+    profileSchool: '你的学校',
+    profileSave: '保存',
 
     // Item detail
-    detailContact: 'èç³»åå®¶',
-    detailPrice: 'ä»·æ ¼',
-    detailCategory: 'åç±»',
-    detailSchool: 'å­¦æ ¡',
-    detailPostedBy: 'åå¸è',
-    detailDate: 'åå¸æ¶é´',
-    detailBack: 'è¿å',
+    detailContact: '联系卖家',
+    detailPrice: '价格',
+    detailCategory: '分类',
+    detailSchool: '学校',
+    detailPostedBy: '发布者',
+    detailDate: '发布时间',
+    detailBack: '返回',
 
     // Footer
-    footerText: 'Â© 2026 UniSwap Â· çº¯ä¿¡æ¯å¹³å°ï¼ä¸åä¸ä»»ä½äº¤æ',
+    footerText: '© 2026 UniSwap · 纯信息平台，不参与任何交易',
   },
   en: {
     brand: 'UniSwap',
@@ -115,7 +115,7 @@ const t = {
     navMyItems: 'My Items',
     navLogin: 'Login',
     navLogout: 'Logout',
-    langSwitch: 'ä¸­æ',
+    langSwitch: '中文',
 
     catAll: 'All',
     catFurniture: 'Furniture',
@@ -201,20 +201,20 @@ const t = {
     detailDate: 'Posted',
     detailBack: 'Back',
 
-    footerText: 'Â© 2026 UniSwap Â· Info platform only â we never handle transactions',
+    footerText: '© 2026 UniSwap · Info platform only — we never handle transactions',
   },
 };
 
 const CATEGORIES = [
-  { key: 'all', icon: 'ð ' },
-  { key: 'furniture', icon: 'ðï¸' },
-  { key: 'electronics', icon: 'ð»' },
-  { key: 'textbooks', icon: 'ð' },
-  { key: 'kitchen', icon: 'ð³' },
-  { key: 'clothing', icon: 'ð' },
-  { key: 'transport', icon: 'ð²' },
-  { key: 'daily', icon: 'ð§´' },
-  { key: 'other', icon: 'ð¦' },
+  { key: 'all', icon: '🏠' },
+  { key: 'furniture', icon: '🛋️' },
+  { key: 'electronics', icon: '💻' },
+  { key: 'textbooks', icon: '📚' },
+  { key: 'kitchen', icon: '🍳' },
+  { key: 'clothing', icon: '👕' },
+  { key: 'transport', icon: '🚲' },
+  { key: 'daily', icon: '🧴' },
+  { key: 'other', icon: '📦' },
 ];
 
 const SCHOOLS = [
