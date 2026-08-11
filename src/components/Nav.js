@@ -20,12 +20,13 @@ export default function Nav() {
   }, []);
 
   const links = [
-    { href: '/', label: t('navHome'), icon: '🏠' },
-    { href: '/browse', label: t('navBrowse'), icon: '🔍' },
-    { href: '/want-to-buy', label: t('navWantToBuy'), icon: '📝' },
-    { href: '/post', label: t('navPost'), icon: '➕', auth: true },
-    { href: '/my-listings', label: t('navMyItems'), icon: '📋', auth: true },
-    { href: '/safety', label: t('navSafety'), icon: '🛡️' },
+    { href: '/', label: t('navHome'), icon: 'ð ' },
+    { href: '/schools', label: t('navSchools'), icon: 'ð' },
+    { href: '/browse', label: t('navBrowse'), icon: 'ð' },
+    { href: '/want-to-buy', label: t('navWantToBuy'), icon: 'ð' },
+    { href: '/post', label: t('navPost'), icon: 'â', auth: true },
+    { href: '/my-listings', label: t('navMyItems'), icon: 'ð', auth: true },
+    { href: '/safety', label: t('navSafety'), icon: 'ð¡ï¸' },
   ];
 
   const isActive = (href) => pathname === href;
@@ -134,7 +135,7 @@ export default function Nav() {
               }}
               className="w-full text-left flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-red-500"
             >
-              <span className="text-lg">👋</span>
+              <span className="text-lg">ð</span>
               {t('navLogout')}
             </button>
           )}
