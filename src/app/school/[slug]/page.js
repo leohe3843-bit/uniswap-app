@@ -1,18 +1,18 @@
 'use client';
-import { use, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useLang } from '@/lib/i18n';
 import { getSchoolBySlug, getSchoolsByState } from '@/lib/schools';
 
 export default function SchoolCommunityPage({ params }) {
-  const { slug } = use(params);
+  const { slug } = params;
   const { t } = useLang();
   const school = getSchoolBySlug(slug);
   const [bulletinText, setBulletinText] = useState('');
   const [bulletins, setBulletins] = useState([
-    { id: 1, text: 'æäººéè¦å¾®ç§¯åè¯¾æ¬åï¼å ä¹å¨æ°ï¼åä»·åºï¼', time: '2 å°æ¶å', author: 'Student A' },
-    { id: 2, text: 'ä¸å­¦ææäººè¦åç§åï¼æ ¡å­éè¿ä¸¤å®¤ä¸å', time: '5 å°æ¶å', author: 'Student B' },
-    { id: 3, text: 'æ¬å®¶å­£æ¥äºï¼æä¸æ¹å¨å·åå®¶å·è¦åºï¼æå´è¶£ç§è', time: '1 å¤©å', author: 'Student C' },
+    { id: 1, text: '有人需要微积分课本吗？几乎全新，半价出！', time: '2 小时前', author: 'Student A' },
+    { id: 2, text: '下学期有人要合租吗？校园附近两室一厅', time: '5 小时前', author: 'Student B' },
+    { id: 3, text: '搬家季来了，有一批厨具和家具要出，感兴趣私聊', time: '1 天前', author: 'Student C' },
   ]);
 
   if (!school) {
@@ -39,15 +39,15 @@ export default function SchoolCommunityPage({ params }) {
 
   // Demo items
   const demoItems = [
-    { id: 1, title: 'IKEA ä¹¦æ¡ 9ææ°', price: 45, cat: 'å®¶å·' },
-    { id: 2, title: 'MacBook Pro åçµå¨', price: 20, cat: 'çµå­äº§å' },
-    { id: 3, title: 'å¾®ç§¯åææ ç¬¬8ç', price: 15, cat: 'æç§ä¹¦' },
-    { id: 4, title: 'ä¸éé¢çéå¥è£', price: 0, cat: 'å¨å·' },
+    { id: 1, title: 'IKEA 书桌 9成新', price: 45, cat: '家具' },
+    { id: 2, title: 'MacBook Pro 充电器', price: 20, cat: '电子产品' },
+    { id: 3, title: '微积分教材 第8版', price: 15, cat: '教科书' },
+    { id: 4, title: '不锈钢炒锅套装', price: 0, cat: '厨具' },
   ];
 
   const demoWants = [
-    { id: 1, title: 'æ±ä¸å¼ åäººåºå«', budget: 50 },
-    { id: 2, title: 'æ±äºæèªè¡è½¦', budget: 80 },
+    { id: 1, title: '求一张双人床垫', budget: 50 },
+    { id: 2, title: '求二手自行车', budget: 80 },
   ];
 
   return (
@@ -61,7 +61,7 @@ export default function SchoolCommunityPage({ params }) {
       >
         <div className="max-w-5xl mx-auto text-white">
           <Link href="/schools" className="inline-flex items-center text-white/70 hover:text-white text-sm mb-6 transition-colors">
-            â {t('schoolBackToAll')}
+            ← {t('schoolBackToAll')}
           </Link>
 
           <div className="flex items-center gap-5">
@@ -70,7 +70,7 @@ export default function SchoolCommunityPage({ params }) {
             </div>
             <div>
               <h1 className="text-3xl font-bold">{school.name}</h1>
-              <p className="text-white/80 mt-1">ð {school.city}, {school.state}</p>
+              <p className="text-white/80 mt-1">📍 {school.city}, {school.state}</p>
               <div className="flex items-center gap-3 mt-2">
                 <span className="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-xs">{school.mascot}</span>
                 <span className="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-xs">{t('schoolCommunity')}</span>
@@ -98,12 +98,12 @@ export default function SchoolCommunityPage({ params }) {
 
       <div className="max-w-5xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main content â 2/3 */}
+          {/* Main content — 2/3 */}
           <div className="lg:col-span-2 space-y-8">
             {/* Bulletin Board */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                ð {t('schoolBulletin')}
+                📋 {t('schoolBulletin')}
               </h2>
 
               {/* Post input */}
@@ -131,7 +131,7 @@ export default function SchoolCommunityPage({ params }) {
                     <p className="text-sm text-gray-800">{b.text}</p>
                     <div className="flex items-center gap-2 mt-2 text-xs text-gray-400">
                       <span>{b.author}</span>
-                      <span>Â·</span>
+                      <span>·</span>
                       <span>{b.time}</span>
                     </div>
                   </div>
@@ -143,9 +143,9 @@ export default function SchoolCommunityPage({ params }) {
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-                  ð·ï¸ {t('schoolItems')}
+                  🏷️ {t('schoolItems')}
                 </h2>
-                <Link href="/browse" className="text-sm text-brand-600 hover:underline">{t('schoolViewAll')} â</Link>
+                <Link href="/browse" className="text-sm text-brand-600 hover:underline">{t('schoolViewAll')} →</Link>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -169,9 +169,9 @@ export default function SchoolCommunityPage({ params }) {
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-                  ð {t('schoolWants')}
+                  🙋 {t('schoolWants')}
                 </h2>
-                <Link href="/want-to-buy" className="text-sm text-brand-600 hover:underline">{t('schoolViewAll')} â</Link>
+                <Link href="/want-to-buy" className="text-sm text-brand-600 hover:underline">{t('schoolViewAll')} →</Link>
               </div>
 
               <div className="space-y-3">
@@ -187,7 +187,7 @@ export default function SchoolCommunityPage({ params }) {
             </div>
           </div>
 
-          {/* Sidebar â 1/3 */}
+          {/* Sidebar — 1/3 */}
           <div className="space-y-6">
             {/* School Info Card */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
