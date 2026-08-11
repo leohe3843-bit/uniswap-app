@@ -7,25 +7,25 @@ export default function HomePage() {
   const { t } = useLang();
 
   const philosophies = [
-    { icon: 'ð¤', titleKey: 'phil1Title', descKey: 'phil1Desc', bg: 'bg-blue-50' },
-    { icon: 'ð±', titleKey: 'phil2Title', descKey: 'phil2Desc', bg: 'bg-emerald-50' },
-    { icon: 'ðï¸', titleKey: 'phil3Title', descKey: 'phil3Desc', bg: 'bg-purple-50' },
-    { icon: 'ð', titleKey: 'phil4Title', descKey: 'phil4Desc', bg: 'bg-amber-50' },
+    { icon: '🤝', titleKey: 'phil1Title', descKey: 'phil1Desc', bg: 'bg-blue-50' },
+    { icon: '🌱', titleKey: 'phil2Title', descKey: 'phil2Desc', bg: 'bg-emerald-50' },
+    { icon: '🏘️', titleKey: 'phil3Title', descKey: 'phil3Desc', bg: 'bg-purple-50' },
+    { icon: '🔍', titleKey: 'phil4Title', descKey: 'phil4Desc', bg: 'bg-amber-50' },
   ];
 
   const advantages = [
-    { icon: 'ð°', titleKey: 'adv1Title', descKey: 'adv1Desc' },
-    { icon: 'ð¯', titleKey: 'adv2Title', descKey: 'adv2Desc' },
-    { icon: 'ð¡ï¸', titleKey: 'adv3Title', descKey: 'adv3Desc' },
-    { icon: 'â¡', titleKey: 'adv4Title', descKey: 'adv4Desc' },
-    { icon: 'ð«', titleKey: 'adv5Title', descKey: 'adv5Desc' },
-    { icon: 'ð¦', titleKey: 'adv6Title', descKey: 'adv6Desc' },
+    { icon: '💰', titleKey: 'adv1Title', descKey: 'adv1Desc' },
+    { icon: '🎯', titleKey: 'adv2Title', descKey: 'adv2Desc' },
+    { icon: '🛡️', titleKey: 'adv3Title', descKey: 'adv3Desc' },
+    { icon: '⚡', titleKey: 'adv4Title', descKey: 'adv4Desc' },
+    { icon: '🏫', titleKey: 'adv5Title', descKey: 'adv5Desc' },
+    { icon: '📦', titleKey: 'adv6Title', descKey: 'adv6Desc' },
   ];
 
   const steps = [
-    { num: '01', icon: 'ð§', titleKey: 'how1Title', descKey: 'how1Desc' },
-    { num: '02', icon: 'ð', titleKey: 'how2Title', descKey: 'how2Desc' },
-    { num: '03', icon: 'ð¤', titleKey: 'how3Title', descKey: 'how3Desc' },
+    { num: '01', icon: '📧', titleKey: 'how1Title', descKey: 'how1Desc' },
+    { num: '02', icon: '📋', titleKey: 'how2Title', descKey: 'how2Desc' },
+    { num: '03', icon: '🤝', titleKey: 'how3Title', descKey: 'how3Desc' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 text-center">
           <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
-            ð {t('heroTagline')}
+            🎓 {t('heroTagline')}
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             {t('homeTitle')}
@@ -44,10 +44,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/browse" className="btn-primary text-base !py-4 !px-8 shadow-lg shadow-brand-200">
-              ð {t('ctaBrowse')}
+              🔍 {t('ctaBrowse')}
             </Link>
             <Link href="/post" className="inline-flex items-center gap-2 text-base font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl px-8 py-4 hover:border-brand-300 hover:text-brand-600 transition-all shadow-sm">
-              â {t('ctaPost')}
+              ➕ {t('ctaPost')}
             </Link>
           </div>
         </div>
@@ -61,10 +61,10 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: 'ð°', titleKey: 'uspFree', descKey: 'uspFreeDesc', bg: 'bg-amber-50 border-amber-100' },
-              { icon: 'ð', titleKey: 'uspCampus', descKey: 'uspCampusDesc', bg: 'bg-green-50 border-green-100' },
-              { icon: 'ð¡ï¸', titleKey: 'uspPrivacy', descKey: 'uspPrivacyDesc', bg: 'bg-purple-50 border-purple-100' },
-              { icon: 'ð¦', titleKey: 'uspSeason', descKey: 'uspSeasonDesc', bg: 'bg-blue-50 border-blue-100' },
+              { icon: '💰', titleKey: 'uspFree', descKey: 'uspFreeDesc', bg: 'bg-amber-50 border-amber-100' },
+              { icon: '🎓', titleKey: 'uspCampus', descKey: 'uspCampusDesc', bg: 'bg-green-50 border-green-100' },
+              { icon: '🛡️', titleKey: 'uspPrivacy', descKey: 'uspPrivacyDesc', bg: 'bg-purple-50 border-purple-100' },
+              { icon: '📦', titleKey: 'uspSeason', descKey: 'uspSeasonDesc', bg: 'bg-blue-50 border-blue-100' },
             ].map((item, i) => (
               <div key={i} className={`rounded-2xl border p-5 ${item.bg}`}>
                 <div className="text-2xl mb-3">{item.icon}</div>
@@ -159,7 +159,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-8">
             <Link href="/browse" className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700 transition-colors">
-              {t('ctaBrowse')} â
+              {t('ctaBrowse')} →
             </Link>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-6">
             <Link href="/schools" className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:underline">
-              {t('schoolViewAll')} {getSchoolCount()} {t('schoolsCount')} â
+              {t('schoolViewAll')} {getSchoolCount()} {t('schoolsCount')} →
             </Link>
           </div>
         </div>
@@ -206,19 +206,19 @@ export default function HomePage() {
       {/* ===== CTA Section ===== */}
       <section className="py-20 bg-brand-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 text-8xl">ð</div>
-          <div className="absolute bottom-10 right-10 text-8xl">ð¦</div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl">ð¤</div>
+          <div className="absolute top-10 left-10 text-8xl">🎓</div>
+          <div className="absolute bottom-10 right-10 text-8xl">📦</div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl">🤝</div>
         </div>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">{t('ctaTitle')}</h2>
           <p className="text-lg text-brand-100 mb-10">{t('ctaDesc')}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/browse" className="inline-flex items-center gap-2 bg-white text-brand-600 font-bold rounded-xl px-8 py-4 hover:bg-brand-50 transition-colors shadow-lg text-base">
-              ð {t('ctaBrowse')}
+              🔍 {t('ctaBrowse')}
             </Link>
             <Link href="/login" className="inline-flex items-center gap-2 text-white border-2 border-white/30 font-bold rounded-xl px-8 py-4 hover:bg-white/10 transition-colors text-base">
-              ð {t('navLogin')}
+              🚀 {t('navLogin')}
             </Link>
           </div>
         </div>
