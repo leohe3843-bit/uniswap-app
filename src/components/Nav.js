@@ -36,8 +36,8 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1">
           <span className="text-2xl font-black tracking-tight">
-            <span className="text-gray-900">Uni</span>
-            <span className="text-brand-600">Swap</span>
+            <span className="text-gray-900">Swap</span>
+            <span className="text-brand-600">U</span>
           </span>
         </Link>
 
