@@ -5,237 +5,264 @@ const t = {
   zh: {
     // Nav
     brand: 'SwapU',
-    navHome: '首页',
-    navBrowse: '浏览',
-    navWantToBuy: '求购',
-    navPost: '发布',
-    navMyItems: '我的商品',
-    navSafety: '安全指南',
-    navLogin: '登录',
-    navLogout: '退出',
+    navHome: 'é¦é¡µ',
+    navBrowse: 'æµè§',
+    navWantToBuy: 'æ±è´­',
+    navPost: 'åå¸',
+    navMyItems: 'æçåå',
+    navSafety: 'å®å¨æå',
+    navLogin: 'ç»å½',
+    navLogout: 'éåº',
     langSwitch: 'EN',
 
     // Categories
-    catAll: '全部',
-    catFurniture: '家具',
-    catElectronics: '电子产品',
-    catTextbooks: '教科书',
-    catKitchen: '厨具',
-    catClothing: '服饰',
-    catTransport: '交通工具',
-    catDaily: '生活用品',
-    catOther: '其他',
+    catAll: 'å¨é¨',
+    catFurniture: 'å®¶å·',
+    catElectronics: 'çµå­äº§å',
+    catTextbooks: 'æç§ä¹¦',
+    catKitchen: 'å¨å·',
+    catClothing: 'æé¥°',
+    catTransport: 'äº¤éå·¥å·',
+    catDaily: 'çæ´»ç¨å',
+    catOther: 'å¶ä»',
 
     // Schools
-    schoolAll: '全部学校',
+    schoolAll: 'å¨é¨å­¦æ ¡',
     schoolJHU: 'Johns Hopkins',
     schoolUMD: 'UMD',
     schoolGU: 'Georgetown',
 
-    // Home — Hero
-    homeTitle: '校园二手，轻松搞定',
-    homeSubtitle: '在你的学校周边找到最划算的二手好物',
-    heroTagline: '留学生的校园二手信息平台',
-    heroDesc: '为 DMV 地区（JHU、UMD、Georgetown）的留学生打造的二手物品信息交换平台。我们只做信息桥梁，帮你找到最划算的好物，不参与任何交易。',
+    // School community
+    navSchools: 'å­¦æ ¡',
+    schoolsPageTitle: 'å­¦æ ¡ç¤¾åº',
+    schoolsPageDesc: 'æ¾å°ä½ çå­¦æ ¡ï¼å å¥ä¸å±ç¤¾åº',
+    schoolsSearchPH: 'æç´¢å­¦æ ¡åç§°ãç¼©åæåå¸...',
+    schoolsCount: 'æè¦çå¤§å­¦',
+    schoolsStatesCount: 'ä¸ªå·åå°åº',
+    schoolCommunity: 'ç¤¾åº',
+    schoolBulletin: 'æ ¡å­å¬åæ¿',
+    schoolBulletinEmpty: 'ææ å¬åï¼æ¥åç¬¬ä¸æ¡å§ï¼',
+    schoolBulletinPH: 'åäº«æ ¡å­çæ´»ãäºæä¿¡æ¯ãæ±å©...',
+    schoolBulletinPost: 'åå¸',
+    schoolItems: 'å¨å®åå',
+    schoolWants: 'æ±è´­ä¿¡æ¯',
+    schoolItemsEmpty: 'ææ ååï¼å»åå¸ä¸ä¸ªå§ï¼',
+    schoolWantsEmpty: 'ææ æ±è´­ï¼åå¸ä½ çéæ±ï¼',
+    schoolViewAll: 'æ¥çå¨é¨',
+    schoolAbout: 'å³äº',
+    schoolLocation: 'ä½ç½®',
+    schoolStudents: 'ç¤¾åºæå',
+    schoolVerified: 'å·²è®¤è¯æ ¡å',
+    schoolJoinCommunity: 'å å¥ç¤¾åº',
+    schoolPostItem: 'å¨æ­¤åå¸åå',
+    schoolBrowseItems: 'æµè§æ¬æ ¡åå',
+    schoolNearby: 'éè¿å­¦æ ¡',
+    schoolBackToAll: 'è¿åææå­¦æ ¡',
+
+    // Home â Hero
+    homeTitle: 'æ ¡å­äºæï¼è½»æ¾æå®',
+    homeSubtitle: 'å¨ä½ çå­¦æ ¡å¨è¾¹æ¾å°æåç®çäºæå¥½ç©',
+    heroTagline: 'çå­¦ççæ ¡å­äºæä¿¡æ¯å¹³å°',
+    heroDesc: 'è¦çå¨ç¾ Top 50 é«æ ¡ççå­¦çäºæç©åä¿¡æ¯äº¤æ¢å¹³å°ãæä»¬åªåä¿¡æ¯æ¡¥æ¢ï¼å¸®ä½ æ¾å°æåç®çå¥½ç©ï¼ä¸åä¸ä»»ä½äº¤æã',
 
     // USP banner
-    uspFree: '零佣金',
-    uspFreeDesc: '完全免费发布和浏览',
-    uspCampus: '校园专属',
-    uspCampusDesc: '只面向留学生社区',
-    uspPrivacy: '隐私保护',
-    uspPrivacyDesc: '站内聊天不暴露个人信息',
-    uspSeason: '搬家季必备',
-    uspSeasonDesc: '毕业出清/开学淘货',
+    uspFree: 'é¶ä½£é',
+    uspFreeDesc: 'å®å¨åè´¹åå¸åæµè§',
+    uspCampus: 'æ ¡å­ä¸å±',
+    uspCampusDesc: 'åªé¢åçå­¦çç¤¾åº',
+    uspPrivacy: 'éç§ä¿æ¤',
+    uspPrivacyDesc: 'ç«åèå¤©ä¸æ´é²ä¸ªäººä¿¡æ¯',
+    uspSeason: 'æ¬å®¶å­£å¿å¤',
+    uspSeasonDesc: 'æ¯ä¸åºæ¸/å¼å­¦æ·è´§',
 
     // Philosophy
-    philosophyTitle: '我们的理念',
-    philosophySubtitle: '为什么我们要做 SwapU？',
-    phil1Title: '留学生互助',
-    phil1Desc: '每年开学季和毕业季，大量实用物品被丢弃。我们相信留学生之间的互助可以让每一件好物找到新主人，让资源不被浪费。',
-    phil2Title: '绿色可持续',
-    phil2Desc: '减少不必要的浪费，让闲置物品流转起来。二手不是将就，而是一种聪明、环保的校园生活方式。',
-    phil3Title: '社区连接',
-    phil3Desc: '打破校园之间的信息壁垒，让同城留学生社区更紧密。不只是买卖，更是一种生活方式和经验的分享。',
-    phil4Title: '信息透明',
-    phil4Desc: '所有信息公开透明，没有中间商赚差价。卖家直接展示，买家自主选择，交易方式由双方自行决定。',
+    philosophyTitle: 'æä»¬ççå¿µ',
+    philosophySubtitle: 'ä¸ºä»ä¹æä»¬è¦å SwapUï¼',
+    phil1Title: 'çå­¦çäºå©',
+    phil1Desc: 'æ¯å¹´å¼å­¦å­£åæ¯ä¸å­£ï¼å¤§éå®ç¨ç©åè¢«ä¸¢å¼ãæä»¬ç¸ä¿¡çå­¦çä¹é´çäºå©å¯ä»¥è®©æ¯ä¸ä»¶å¥½ç©æ¾å°æ°ä¸»äººï¼è®©èµæºä¸è¢«æµªè´¹ã',
+    phil2Title: 'ç»¿è²å¯æç»­',
+    phil2Desc: 'åå°ä¸å¿è¦çæµªè´¹ï¼è®©é²ç½®ç©åæµè½¬èµ·æ¥ãäºæä¸æ¯å°å°±ï¼èæ¯ä¸ç§èªæãç¯ä¿çæ ¡å­çæ´»æ¹å¼ã',
+    phil3Title: 'ç¤¾åºè¿æ¥',
+    phil3Desc: 'æç ´æ ¡å­ä¹é´çä¿¡æ¯å£åï¼è®©ååçå­¦çç¤¾åºæ´ç´§å¯ãä¸åªæ¯ä¹°åï¼æ´æ¯ä¸ç§çæ´»æ¹å¼åç»éªçåäº«ã',
+    phil4Title: 'ä¿¡æ¯éæ',
+    phil4Desc: 'ææä¿¡æ¯å¬å¼éæï¼æ²¡æä¸­é´åèµå·®ä»·ãåå®¶ç´æ¥å±ç¤ºï¼ä¹°å®¶èªä¸»éæ©ï¼äº¤ææ¹å¼ç±åæ¹èªè¡å³å®ã',
 
     // Advantages
-    advantageTitle: '为什么选择 SwapU？',
-    advantageSubtitle: '专为留学生设计，解决你的真实需求',
-    adv1Title: '完全免费，零佣金',
-    adv1Desc: '发布和浏览完全免费，我们不从任何交易中抽取佣金。没有隐藏费用，没有会员制，真正的零成本。',
-    adv2Title: '校园专属，精准匹配',
-    adv2Desc: '只服务 DMV 地区高校留学生，商品都在你身边。步行或短途就能取货，省时省力。',
-    adv3Title: '隐私优先，安全放心',
-    adv3Desc: '站内沟通不暴露个人信息，你可以自主选择何时、如何与对方联系。保护你的隐私安全。',
-    adv4Title: '操作极简，3分钟上手',
-    adv4Desc: '邮箱一键登录，拍照即可发布。没有复杂的认证流程，没有繁琐的操作步骤，让分享变得轻杼。',
-    adv5Title: '多校覆盖，跨校交换',
-    adv5Desc: '覆盖 JHU、UMD、Georgetown 三所高校，支持跨校浏览和信息交换，扩大你的选择范围。',
-    adv6Title: '搬家季神器',
-    adv6Desc: '毕业出清还是开学置办？SwapU 帮你在最需要的时候找到最合适的物品，让搬家不再头疼。',
+    advantageTitle: 'ä¸ºä»ä¹éæ© SwapUï¼',
+    advantageSubtitle: 'ä¸ä¸ºçå­¦çè®¾è®¡ï¼è§£å³ä½ ççå®éæ±',
+    adv1Title: 'å®å¨åè´¹ï¼é¶ä½£é',
+    adv1Desc: 'åå¸åæµè§å®å¨åè´¹ï¼æä»¬ä¸ä»ä»»ä½äº¤æä¸­æ½åä½£éãæ²¡æéèè´¹ç¨ï¼æ²¡æä¼åå¶ï¼çæ­£çé¶ææ¬ã',
+    adv2Title: 'æ ¡å­ä¸å±ï¼ç²¾åå¹é',
+    adv2Desc: 'è¦çå¨ç¾ 50 æé¡¶å°é«æ ¡çå­¦çï¼ååé½å¨ä½ èº«è¾¹ãæ­¥è¡æç­éå°±è½åè´§ï¼çæ¶çåã',
+    adv3Title: 'éç§ä¼åï¼å®å¨æ¾å¿',
+    adv3Desc: 'ç«åæ²éä¸æ´é²ä¸ªäººä¿¡æ¯ï¼ä½ å¯ä»¥èªä¸»éæ©ä½æ¶ãå¦ä½ä¸å¯¹æ¹èç³»ãä¿æ¤ä½ çéç§å®å¨ã',
+    adv4Title: 'æä½æç®ï¼3åéä¸æ',
+    adv4Desc: 'é®ç®±ä¸é®ç»å½ï¼æç§å³å¯åå¸ãæ²¡æå¤æçè®¤è¯æµç¨ï¼æ²¡æç¹ççæä½æ­¥éª¤ï¼è®©åäº«åå¾è½»æ¾ã',
+    adv5Title: 'å¨ç¾è¦çï¼è·¨æ ¡äº¤æ¢',
+    adv5Desc: 'è¦çå¨ç¾ 50 æé¡¶å°é«æ ¡ï¼æ¯æè·¨æ ¡æµè§åä¿¡æ¯äº¤æ¢ï¼æ©å¤§ä½ çéæ©èå´ã',
+    adv6Title: 'æ¬å®¶å­£ç¥å¨',
+    adv6Desc: 'æ¯ä¸åºæ¸è¿æ¯å¼å­¦ç½®åï¼SwapU å¸®ä½ å¨æéè¦çæ¶åæ¾å°æåéçç©åï¼è®©æ¬å®¶ä¸åå¤´ç¼ã',
 
     // How it works
-    howTitle: '如何使用？',
-    howSubtitle: '三步开始你的校园二手之旅',
-    how1Title: '注册登录',
-    how1Desc: '输入邮箱，点击邮件中的链接即可登录，无需密码',
-    how2Title: '发布或浏览',
-    how2Desc: '发布你的闲置物品，或浏览其他同学发布的好物',
-    how3Title: '联系交换',
-    how3Desc: '找到心仪的物品？直接联系卖家安排线下交换',
+    howTitle: 'å¦ä½ä½¿ç¨ï¼',
+    howSubtitle: 'ä¸æ­¥å¼å§ä½ çæ ¡å­äºæä¹æ',
+    how1Title: 'æ³¨åç»å½',
+    how1Desc: 'è¾å¥é®ç®±ï¼ç¹å»é®ä»¶ä¸­çé¾æ¥å³å¯ç»å½ï¼æ éå¯ç ',
+    how2Title: 'åå¸ææµè§',
+    how2Desc: 'åå¸ä½ çé²ç½®ç©åï¼ææµè§å¶ä»åå­¦åå¸çå¥½ç©',
+    how3Title: 'èç³»äº¤æ¢',
+    how3Desc: 'æ¾å°å¿ä»ªçç©åï¼ç´æ¥èç³»åå®¶å®æçº¿ä¸äº¤æ¢',
 
     // Category section
-    categoryTitle: '分类浏览',
-    categorySubtitle: '选择你感兴趣的分类，找到你需要的好物',
+    categoryTitle: 'åç±»æµè§',
+    categorySubtitle: 'éæ©ä½ æå´è¶£çåç±»ï¼æ¾å°ä½ éè¦çå¥½ç©',
 
     // Schools section
-    schoolsSectionTitle: '覆盖学校',
-    schoolsSectionDesc: '目前服务于以下 DMV 地区高校的留学生社区',
+    schoolsSectionTitle: 'è¦çå­¦æ ¡',
+    schoolsSectionDesc: 'è¦çå¨ç¾ 50 æé¡¶å°é«æ ¡ï¼æ¯æå­¦æ ¡é½æä¸å±ç¤¾åº',
 
     // CTA
-    ctaTitle: '开始探索校园好物',
-    ctaDesc: '加入 SwapU，发现身边留学生社区的好物',
-    ctaBrowse: '浏览商品',
-    ctaPost: '发布商品',
+    ctaTitle: 'å¼å§æ¢ç´¢æ ¡å­å¥½ç©',
+    ctaDesc: 'å å¥ SwapUï¼åç°èº«è¾¹çå­¦çç¤¾åºçå¥½ç©',
+    ctaBrowse: 'æµè§åå',
+    ctaPost: 'åå¸åå',
 
     // Browse page
-    browseTitle: '浏览商品',
-    browseSubtitle: '在你的学校周边找到最划算的好物',
+    browseTitle: 'æµè§åå',
+    browseSubtitle: 'å¨ä½ çå­¦æ ¡å¨è¾¹æ¾å°æåç®çå¥½ç©',
 
     // Moving season
-    movingBannerTitle: '搬家季专区',
-    movingBannerDesc: '毕业季来了！大量好物低价出清，错过再等一年',
-    movingBannerBtn: '查看急售商品',
-    tagUrgent: '急售',
-    tagMovingSeason: '搬家季',
+    movingBannerTitle: 'æ¬å®¶å­£ä¸åº',
+    movingBannerDesc: 'æ¯ä¸å­£æ¥äºï¼å¤§éå¥½ç©ä½ä»·åºæ¸ï¼éè¿åç­ä¸å¹´',
+    movingBannerBtn: 'æ¥çæ¥å®åå',
+    tagUrgent: 'æ¥å®',
+    tagMovingSeason: 'æ¬å®¶å­£',
 
     // Search & filter
-    searchPlaceholder: '搜索商品...',
-    noItems: '暂无商品',
-    noItemsSub: '成为第一个发布者吧！',
-    freeLabel: '免费',
+    searchPlaceholder: 'æç´¢åå...',
+    noItems: 'ææ åå',
+    noItemsSub: 'æä¸ºç¬¬ä¸ä¸ªåå¸èå§ï¼',
+    freeLabel: 'åè´¹',
     priceUnit: '$',
 
     // Post
-    postTitle: '发布商品',
-    postItemTitle: '标题',
-    postItemTitlePH: '例：IKEA 书桌 9成新',
-    postDesc: '描述',
-    postDescPH: '商品状态、购买时间、取货方式等',
-    postPrice: '价格 ($)',
-    postPricePH: '0 = 免费',
-    postCategory: '分类',
-    postSchool: '学校',
-    postImage: '上传图片',
-    postImageHint: '点击或拖拽上传（最大 5MB）',
-    postSubmit: '发布商品',
-    postSubmitting: '发布中...',
-    postSuccess: '发布成功！',
-    postSelectCategory: '请选择分类',
-    postSelectSchool: '请选择学校',
+    postTitle: 'åå¸åå',
+    postItemTitle: 'æ é¢',
+    postItemTitlePH: 'ä¾ï¼IKEA ä¹¦æ¡ 9ææ°',
+    postDesc: 'æè¿°',
+    postDescPH: 'ååç¶æãè´­ä¹°æ¶é´ãåè´§æ¹å¼ç­',
+    postPrice: 'ä»·æ ¼ ($)',
+    postPricePH: '0 = åè´¹',
+    postCategory: 'åç±»',
+    postSchool: 'å­¦æ ¡',
+    postImage: 'ä¸ä¼ å¾ç',
+    postImageHint: 'ç¹å»æææ½ä¸ä¼ ï¼æå¤§ 5MBï¼',
+    postSubmit: 'åå¸åå',
+    postSubmitting: 'åå¸ä¸­...',
+    postSuccess: 'åå¸æåï¼',
+    postSelectCategory: 'è¯·éæ©åç±»',
+    postSelectSchool: 'è¯·éæ©å­¦æ ¡',
 
     // My items
-    myTitle: '我的商品',
-    myEmpty: '你还没有发布任何商品',
-    myEmptyAction: '去发布',
-    myOnline: '在架',
-    myOffline: '已下架',
-    myToggleOn: '上架',
-    myToggleOff: '下架',
-    myDelete: '删除',
-    myDeleteConfirm: '确定要删除这个商品吗？',
+    myTitle: 'æçåå',
+    myEmpty: 'ä½ è¿æ²¡æåå¸ä»»ä½åå',
+    myEmptyAction: 'å»åå¸',
+    myOnline: 'å¨æ¶',
+    myOffline: 'å·²ä¸æ¶',
+    myToggleOn: 'ä¸æ¶',
+    myToggleOff: 'ä¸æ¶',
+    myDelete: 'å é¤',
+    myDeleteConfirm: 'ç¡®å®è¦å é¤è¿ä¸ªåååï¼',
 
     // Login
-    loginTitle: '登录 / 注册',
-    loginEmail: '邮箱地址',
-    loginEmailPH: '输入你的邮箱',
-    loginSendLink: '发送登录链接',
-    loginSending: '发送中...',
-    loginHint: '我们会发送一封包含登录链接的邮件',
-    loginSentTitle: '邮件已发送！',
-    loginSentDesc: '请查看你的邮箱',
-    loginSentHint: '点击邮件中的链接即可登录，链接会在24小时后失效',
-    loginBackToEmail: '返回重新输入',
+    loginTitle: 'ç»å½ / æ³¨å',
+    loginEmail: 'é®ç®±å°å',
+    loginEmailPH: 'è¾å¥ä½ çé®ç®±',
+    loginSendLink: 'åéç»å½é¾æ¥',
+    loginSending: 'åéä¸­...',
+    loginHint: 'æä»¬ä¼åéä¸å°åå«ç»å½é¾æ¥çé®ä»¶',
+    loginSentTitle: 'é®ä»¶å·²åéï¼',
+    loginSentDesc: 'è¯·æ¥çä½ çé®ç®±',
+    loginSentHint: 'ç¹å»é®ä»¶ä¸­çé¾æ¥å³å¯ç»å½ï¼é¾æ¥ä¼å¨24å°æ¶åå¤±æ',
+    loginBackToEmail: 'è¿åéæ°è¾å¥',
 
     // Profile setup
-    profileTitle: '完善资料',
-    profileName: '昵称',
-    profileNamePH: '其他用户看到的名字',
-    profileSchool: '你的学校',
-    profileSave: '保存',
+    profileTitle: 'å®åèµæ',
+    profileName: 'æµç§°',
+    profileNamePH: 'å¶ä»ç¨æ·çå°çåå­',
+    profileSchool: 'ä½ çå­¦æ ¡',
+    profileSave: 'ä¿å­',
 
     // Item detail
-    detailContact: '联系卖家',
-    detailPrice: '价格',
-    detailCategory: '分类',
-    detailSchool: '学校',
-    detailPostedBy: '发布者',
-    detailDate: '发布时间',
-    detailBack: '返回',
+    detailContact: 'èç³»åå®¶',
+    detailPrice: 'ä»·æ ¼',
+    detailCategory: 'åç±»',
+    detailSchool: 'å­¦æ ¡',
+    detailPostedBy: 'åå¸è',
+    detailDate: 'åå¸æ¶é´',
+    detailBack: 'è¿å',
 
     // Want to Buy
-    wantTitle: '求购专区',
-    wantSubtitle: '发布你的需求，让有货的同学主务找到你的需求',
-    wantPostBtn: '发布求购',
-    wantBudget: '预算',
-    wantContact: '联系TA',
-    wantEmpty: '暂无求购信息',
-    wantEmptySub: '成为第一个发布求购需求的人吧！',
-    wantLoginHint: '登录后即可发布求购需求',
-    wantDemoNotice: '以下为示例数据，正式上线后将显示真实求购信息',
+    wantTitle: 'æ±è´­ä¸åº',
+    wantSubtitle: 'åå¸ä½ çéæ±ï¼è®©æè´§çåå­¦ä¸»å¨æ¾å°ä½ ',
+    wantPostBtn: 'åå¸æ±è´­',
+    wantBudget: 'é¢ç®',
+    wantContact: 'èç³»TA',
+    wantEmpty: 'ææ æ±è´­ä¿¡æ¯',
+    wantEmptySub: 'æä¸ºç¬¬ä¸ä¸ªåå¸æ±è´­éæ±çäººå§ï¼',
+    wantLoginHint: 'ç»å½åå³å¯åå¸æ±è´­éæ±',
+    wantDemoNotice: 'ä»¥ä¸ä¸ºç¤ºä¾æ°æ®ï¼æ­£å¼ä¸çº¿åå°æ¾ç¤ºçå®æ±è´­ä¿¡æ¯',
 
     // Safety page
-    safetyTitle: '安全交易指南',
-    safetySubtitle: '你的安全是我们最关心的事。请在交易前仔细阅读以下建议。',
-    safetyTip1Title: '选择公共场所见面',
-    safetyTip1Desc: '建议在校园内的图书馆、学生中心、咖啑厅等公共区域进行物品交接。避免去陌生人的私人住所。',
-    safetyTip2Title: '白天交易更安全',
-    safetyTip2Desc: '尽量安排在白天进行交易，避免深夜或光线不好的时段和地点。',
-    safetyTip3Title: '告知朋友你的行程',
-    safetyTip3Desc: '出门前告诉室友或朋友你的去向、预计返回时间和交易对方的信息。',
-    safetyTip4Title: '检查物品再确认',
-    safetyTip4Desc: '当面检查物品的状况和功能是否与描述一致，确认无误后再完成交易。',
-    safetyTip5Title: '使用安全的支付方式',
-    safetyTip5Desc: '建议使用 Venmo、Zelle 等有记录的电子支付方式，避免大额现金交易。保留转账记录作为凭证。',
-    safetyTip6Title: '信任你的直觉',
-    safetyTip6Desc: '如果感到任何不安全或可疑，不要犹豫，立即取消交易。你的安全永远比一笔交易更重要。',
+    safetyTitle: 'å®å¨äº¤ææå',
+    safetySubtitle: 'ä½ çå®å¨æ¯æä»¬æå³å¿çäºãè¯·å¨äº¤æåä»ç»éè¯»ä»¥ä¸å»ºè®®ã',
+    safetyTip1Title: 'éæ©å¬å±åºæè§é¢',
+    safetyTip1Desc: 'å»ºè®®å¨æ ¡å­åçå¾ä¹¦é¦ãå­¦çä¸­å¿ãåå¡åç­å¬å±åºåè¿è¡ç©åäº¤æ¥ãé¿åå»éçäººçç§äººä½æã',
+    safetyTip2Title: 'ç½å¤©äº¤ææ´å®å¨',
+    safetyTip2Desc: 'å°½éå®æå¨ç½å¤©è¿è¡äº¤æï¼é¿åæ·±å¤æåçº¿ä¸å¥½çæ¶æ®µåå°ç¹ã',
+    safetyTip3Title: 'åç¥æåä½ çè¡ç¨',
+    safetyTip3Desc: 'åºé¨ååè¯å®¤åææåä½ çå»åãé¢è®¡è¿åæ¶é´åäº¤æå¯¹æ¹çä¿¡æ¯ã',
+    safetyTip4Title: 'æ£æ¥ç©ååç¡®è®¤',
+    safetyTip4Desc: 'å½é¢æ£æ¥ç©åçç¶åµååè½æ¯å¦ä¸æè¿°ä¸è´ï¼ç¡®è®¤æ è¯¯ååå®æäº¤æã',
+    safetyTip5Title: 'ä½¿ç¨å®å¨çæ¯ä»æ¹å¼',
+    safetyTip5Desc: 'å»ºè®®ä½¿ç¨ VenmoãZelle ç­æè®°å½ççµå­æ¯ä»æ¹å¼ï¼é¿åå¤§é¢ç°éäº¤æãä¿çè½¬è´¦è®°å½ä½ä¸ºå­è¯ã',
+    safetyTip6Title: 'ä¿¡ä»»ä½ çç´è§',
+    safetyTip6Desc: 'å¦ææå°ä»»ä½ä¸å®å¨æå¯çï¼ä¸è¦ç¹è±«ï¼ç«å³åæ¶äº¤æãä½ çå®å¨æ°¸è¿æ¯ä¸ç¬äº¤ææ´éè¦ã',
 
     // FAQ
-    faqTitle: '常见问题',
-    faq1Q: 'SwapU 是免费的吗？',
-    faq1A: '是的，SwapU 完全免费。发布和浏览商品不收取任何费用，我们也不从交易中抽取佣金。',
-    faq2Q: 'SwapU 参与交易吗？',
-    faq2A: '不参与。SwapU 是一个纯信息平台，我�l只提供买卖双方的信息展示和连接服务。所有交易由双方自行协商和完成，平台不介入也不承担交易相关责任。',
-    faq3Q: '如何联系卖家家？',
-    faq3A: '点击商品详情页的"联系卖家"按钮，即可查看对方留下的联系方式。建议优先使用微信或 WhatsApp 沟通。',
-    faq4Q: '可以发布哪些类型的商品？',
-    faq4A: '你可以发布家具、电子产品、教科书、厨具、服饰、交通工具、生活用品等各类二手物品。禁止发布违法物品、食品、药品等。',
-    faq5Q: '遇到问题怎么办？',
-    faq5A: '如遇到虚假信息或不彃行为，请通过页面底部的联系方式向我们举报，我们会及时处理。',
-    faq6Q: '我的个人信息安全吗？',
-    faq6A: '我们重视你的隐私。平台仅展示你选择公开的信息，不会向第三方出售或分享你的个人数据。',
+    faqTitle: 'å¸¸è§é®é¢',
+    faq1Q: 'SwapU æ¯åè´¹çåï¼',
+    faq1A: 'æ¯çï¼SwapU å®å¨åè´¹ãåå¸åæµè§ååä¸æ¶åä»»ä½è´¹ç¨ï¼æä»¬ä¹ä¸ä»äº¤æä¸­æ½åä½£éã',
+    faq2Q: 'SwapU åä¸äº¤æåï¼',
+    faq2A: 'ä¸åä¸ãSwapU æ¯ä¸ä¸ªçº¯ä¿¡æ¯å¹³å°ï¼æä»¬åªæä¾ä¹°ååæ¹çä¿¡æ¯å±ç¤ºåè¿æ¥æå¡ãææäº¤æç±åæ¹èªè¡åååå®æï¼å¹³å°ä¸ä»å¥ä¹ä¸æ¿æäº¤æç¸å³è´£ä»»ã',
+    faq3Q: 'å¦ä½èç³»åå®¶æä¹°å®¶ï¼',
+    faq3A: 'ç¹å»ååè¯¦æé¡µç"èç³»åå®¶"æé®ï¼å³å¯æ¥çå¯¹æ¹çä¸çèç³»æ¹å¼ãå»ºè®®ä¼åä½¿ç¨å¾®ä¿¡æ WhatsApp æ²éã',
+    faq4Q: 'å¯ä»¥åå¸åªäºç±»åçååï¼',
+    faq4A: 'ä½ å¯ä»¥åå¸å®¶å·ãçµå­äº§åãæç§ä¹¦ãå¨å·ãæé¥°ãäº¤éå·¥å·ãçæ´»ç¨åç­åç±»äºæç©åãç¦æ­¢åå¸è¿æ³ç©åãé£åãè¯åç­ã',
+    faq5Q: 'éå°é®é¢æä¹åï¼',
+    faq5A: 'å¦éå°èåä¿¡æ¯æä¸å½è¡ä¸ºï¼è¯·éè¿é¡µé¢åºé¨çèç³»æ¹å¼åæä»¬ä¸¾æ¥ï¼æä»¬ä¼åæ¶å¤çã',
+    faq6Q: 'æçä¸ªäººä¿¡æ¯å®å¨åï¼',
+    faq6A: 'æä»¬éè§ä½ çéç§ãå¹³å°ä»å±ç¤ºä½ éæ©å¬å¼çä¿¡æ¯ï¼ä¸ä¼åç¬¬ä¸æ¹åºå®æåäº«ä½ çä¸ªäººæ°æ®ã',
 
     // Footer
-    footerAbout: '关于 SwapU',
-    footerAboutDesc: 'SwapU 是专为 DMV 地区留学生打造的二手物品信息平台，致力于连接校园社区，让闲置好物重新流转。',
-    footerLinks: '快速链接',
-    footerContactTitle: '联系我们',
-    footerEmailLabel: '邮箱',
-    footerPhoneLabel: '电话',
-    footerWeChatLabel: '微信公众号',
-    footerXhsLabel: '小红书',
+    footerAbout: 'å³äº SwapU',
+    footerAboutDesc: 'SwapU æ¯ä¸ä¸ºå¨ç¾é«æ ¡çå­¦çæé çäºæç©åä¿¡æ¯å¹³å°ï¼è´åäºè¿æ¥æ ¡å­ç¤¾åºï¼è®©é²ç½®å¥½ç©éæ°æµè½¬ã',
+    footerLinks: 'å¿«éé¾æ¥',
+    footerContactTitle: 'èç³»æä»¬',
+    footerEmailLabel: 'é®ç®±',
+    footerPhoneLabel: 'çµè¯',
+    footerWeChatLabel: 'å¾®ä¿¡å¬ä¼å·',
+    footerXhsLabel: 'å°çº¢ä¹¦',
     footerEmail: 'contact@swapu-dmv.com',
     footerPhone: '+1 (202) 555-0188',
     footerWeChat: 'SwapU_Official',
-    footerXhs: '@SwapU留学生二手',
-    footerLegalTitle: '法律声明',
-    footerLegalText: 'SwapU 仅提供信息展示和连接服务，不参与任何实际交易。平台上展示的所有商品信息由用户自行发布，SwapU 不对商品的真实性、质量、安全性做任何保证或承担任何责任。所有交易行为由买卖双方自行协商完成，与本平台无关。用户使用本平台即表示同意以上条款。',
-    footerRightsText: '本平台所有内容（包括但不限于文字、图片、设计、标识）的知识产权彂 SwapU 团队所有。未经书面许可，不得转载、复制或用于商业用途。',
-    footerDisclaimerText: '本网站最终解释权彂 SwapU 团队所有。我们保留随时修改、更新平台规则和服务条款的权利，修改后的条款将在网站公布后立即生效。',
-    footerCopyright: '© 2026 SwapU. All rights reserved. | 纯信息平台，不参与任何交易',
-    footerText: '© 2026 SwapU · 纯信息平台，不参与任何交易',
+    footerXhs: '@SwapUçå­¦çäºæ',
+    footerLegalTitle: 'æ³å¾å£°æ',
+    footerLegalText: 'SwapU ä»æä¾ä¿¡æ¯å±ç¤ºåè¿æ¥æå¡ï¼ä¸åä¸ä»»ä½å®éäº¤æãå¹³å°ä¸å±ç¤ºçææååä¿¡æ¯ç±ç¨æ·èªè¡åå¸ï¼SwapU ä¸å¯¹ååççå®æ§ãè´¨éãå®å¨æ§åä»»ä½ä¿è¯ææ¿æä»»ä½è´£ä»»ãææäº¤æè¡ä¸ºç±ä¹°ååæ¹èªè¡ååå®æï¼ä¸æ¬å¹³å°æ å³ãç¨æ·ä½¿ç¨æ¬å¹³å°å³è¡¨ç¤ºåæä»¥ä¸æ¡æ¬¾ã',
+    footerRightsText: 'æ¬å¹³å°ææåå®¹ï¼åæ¬ä½ä¸éäºæå­ãå¾çãè®¾è®¡ãæ è¯ï¼çç¥è¯äº§æå½ SwapU å¢éææãæªç»ä¹¦é¢è®¸å¯ï¼ä¸å¾è½¬è½½ãå¤å¶æç¨äºåä¸ç¨éã',
+    footerDisclaimerText: 'æ¬ç½ç«æç»è§£éæå½ SwapU å¢éææãæä»¬ä¿çéæ¶ä¿®æ¹ãæ´æ°å¹³å°è§ååæå¡æ¡æ¬¾çæå©ï¼ä¿®æ¹åçæ¡æ¬¾å°å¨ç½ç«å¬å¸åç«å³çæã',
+    footerCopyright: 'Â© 2026 SwapU. All rights reserved. | çº¯ä¿¡æ¯å¹³å°ï¼ä¸åä¸ä»»ä½äº¤æ',
+    footerText: 'Â© 2026 SwapU Â· çº¯ä¿¡æ¯å¹³å°ï¼ä¸åä¸ä»»ä½äº¤æ',
   },
   en: {
     brand: 'SwapU',
@@ -247,7 +274,7 @@ const t = {
     navSafety: 'Safety',
     navLogin: 'Login',
     navLogout: 'Logout',
-    langSwitch: '中文',
+    langSwitch: 'ä¸­æ',
 
     catAll: 'All',
     catFurniture: 'Furniture',
@@ -264,10 +291,36 @@ const t = {
     schoolUMD: 'UMD',
     schoolGU: 'Georgetown',
 
+    navSchools: 'Schools',
+    schoolsPageTitle: 'School Communities',
+    schoolsPageDesc: 'Find your school and join the community',
+    schoolsSearchPH: 'Search by school name, abbreviation, or city...',
+    schoolsCount: 'universities covered',
+    schoolsStatesCount: 'states & regions',
+    schoolCommunity: 'Community',
+    schoolBulletin: 'Campus Bulletin Board',
+    schoolBulletinEmpty: 'No posts yet â be the first to share!',
+    schoolBulletinPH: 'Share campus life, secondhand tips, requests...',
+    schoolBulletinPost: 'Post',
+    schoolItems: 'Items for Sale',
+    schoolWants: 'Want to Buy',
+    schoolItemsEmpty: 'No items yet â post one!',
+    schoolWantsEmpty: 'No requests yet â post yours!',
+    schoolViewAll: 'View All',
+    schoolAbout: 'About',
+    schoolLocation: 'Location',
+    schoolStudents: 'Community Members',
+    schoolVerified: 'Verified Alumni',
+    schoolJoinCommunity: 'Join Community',
+    schoolPostItem: 'Post Item Here',
+    schoolBrowseItems: 'Browse Items',
+    schoolNearby: 'Nearby Schools',
+    schoolBackToAll: 'Back to All Schools',
+
     homeTitle: 'Campus Secondhand, Simplified',
     homeSubtitle: 'Find the best deals near your school',
     heroTagline: 'Campus Secondhand Platform for International Students',
-    heroDesc: 'Built for international students in the DMV area (JHU, UMD, Georgetown). We connect buyers and sellers as an information bridge — no transactions, no middlemen.',
+    heroDesc: 'Covering the top 50 US universities. We connect buyers and sellers as an information bridge â no transactions, no middlemen.',
 
     uspFree: 'Zero Fees',
     uspFreeDesc: 'Totally free to post & browse',
@@ -283,31 +336,31 @@ const t = {
     phil1Title: 'Student Mutual Aid',
     phil1Desc: 'Every semester, useful items get thrown away during move-in and move-out. We believe students helping students can give every item a second life and prevent waste.',
     phil2Title: 'Green & Sustainable',
-    phil2Desc: 'Reduce unnecessary waste by keeping items in circulation. Secondhand isn\'t settling — it\'s a smart, eco-friendly campus lifestyle.',
+    phil2Desc: 'Reduce unnecessary waste by keeping items in circulation. Secondhand isn\'t settling â it\'s a smart, eco-friendly campus lifestyle.',
     phil3Title: 'Community Connection',
-    phil3Desc: 'Break information barriers across campuses, bringing the local student community closer. It\'s not just trading — it\'s sharing a way of life.',
+    phil3Desc: 'Break information barriers across campuses, bringing the local student community closer. It\'s not just trading â it\'s sharing a way of life.',
     phil4Title: 'Transparent Info',
     phil4Desc: 'All information is open and transparent. No middlemen, no markups. Sellers show directly, buyers choose freely, and both parties decide how to transact.',
 
     advantageTitle: 'Why SwapU?',
     advantageSubtitle: 'Designed for students, solving real needs',
     adv1Title: 'Completely Free',
-    adv1Desc: 'Posting and browsing are completely free. We never take commissions. No hidden fees, no memberships — truly zero cost.',
+    adv1Desc: 'Posting and browsing are completely free. We never take commissions. No hidden fees, no memberships â truly zero cost.',
     adv2Title: 'Campus-Exclusive Matching',
-    adv2Desc: 'Serving only DMV-area universities. Everything is nearby — walk or take a short trip to pick up, saving time and effort.',
+    adv2Desc: 'Serving 50 top US universities. Everything is nearby â walk or take a short trip to pick up, saving time and effort.',
     adv3Title: 'Privacy First',
     adv3Desc: 'In-app communication protects your personal info. You choose when and how to connect with others. Your privacy is our priority.',
     adv4Title: 'Dead Simple, 3 Min Setup',
-    adv4Desc: 'One-click email login, snap a photo to post. No complicated verification, no tedious steps — sharing made effortless.',
-    adv5Title: 'Multi-Campus Coverage',
-    adv5Desc: 'Covering JHU, UMD, and Georgetown. Browse and exchange across all three schools, expanding your options.',
+    adv4Desc: 'One-click email login, snap a photo to post. No complicated verification, no tedious steps â sharing made effortless.',
+    adv5Title: 'Nationwide Coverage',
+    adv5Desc: 'Covering 50 top US universities. Browse and exchange across all schools, expanding your options.',
     adv6Title: 'Moving Season Essential',
     adv6Desc: 'Graduating or just arriving? SwapU helps you find what you need, when you need it. No more moving headaches.',
 
     howTitle: 'How It Works',
     howSubtitle: 'Three steps to start your campus secondhand journey',
     how1Title: 'Sign Up',
-    how1Desc: 'Enter your email, click the link to log in — no password needed',
+    how1Desc: 'Enter your email, click the link to log in â no password needed',
     how2Title: 'Post or Browse',
     how2Desc: 'List your items or browse what other students have to offer',
     how3Title: 'Connect & Exchange',
@@ -317,7 +370,7 @@ const t = {
     categorySubtitle: 'Choose a category to find what you need',
 
     schoolsSectionTitle: 'Schools We Cover',
-    schoolsSectionDesc: 'Currently serving international student communities at these DMV-area universities',
+    schoolsSectionDesc: 'Covering 50 top US universities, each with its own community',
 
     ctaTitle: 'Start Exploring Campus Deals',
     ctaDesc: 'Join SwapU and discover great finds in your student community',
@@ -328,7 +381,7 @@ const t = {
     browseSubtitle: 'Find the best deals near your school',
 
     movingBannerTitle: 'Moving Season',
-    movingBannerDesc: 'Graduation season is here! Great deals on everything — don\'t miss out',
+    movingBannerDesc: 'Graduation season is here! Great deals on everything â don\'t miss out',
     movingBannerBtn: 'View Urgent Listings',
     tagUrgent: 'Urgent',
     tagMovingSeason: 'Moving',
@@ -423,7 +476,7 @@ const t = {
     faq1Q: 'Is SwapU free?',
     faq1A: 'Yes, SwapU is completely free. We never charge for posting or browsing, and we take no commission from any transaction.',
     faq2Q: 'Does SwapU handle transactions?',
-    faq2A: 'No. SwapU is a pure information platform. We only connect buyers and sellers. All transactions are arranged independently between parties — we do not participate in or bear responsibility for any deals.',
+    faq2A: 'No. SwapU is a pure information platform. We only connect buyers and sellers. All transactions are arranged independently between parties â we do not participate in or bear responsibility for any deals.',
     faq3Q: 'How do I contact a seller or buyer?',
     faq3A: 'Click the "Contact Seller" button on an item\'s detail page to see their contact info. We recommend using WeChat or WhatsApp.',
     faq4Q: 'What can I post?',
@@ -435,7 +488,7 @@ const t = {
 
     // Footer
     footerAbout: 'About SwapU',
-    footerAboutDesc: 'SwapU is a secondhand goods info platform built for international students in the DMV area, connecting campus communities and keeping great items in circulation.',
+    footerAboutDesc: 'SwapU is a secondhand goods info platform built for international students across the US, connecting campus communities and keeping great items in circulation.',
     footerLinks: 'Quick Links',
     footerContactTitle: 'Contact Us',
     footerEmailLabel: 'Email',
@@ -450,21 +503,21 @@ const t = {
     footerLegalText: 'SwapU provides information display and connection services only and does not participate in any actual transactions. All product information is posted by users. SwapU makes no guarantees regarding the authenticity, quality, or safety of listed items and bears no responsibility for any transactions. All deals are arranged independently between buyers and sellers. By using this platform, you agree to these terms.',
     footerRightsText: 'All content on this platform, including but not limited to text, images, design, and logos, is the intellectual property of the SwapU team. Reproduction or commercial use without written permission is prohibited.',
     footerDisclaimerText: 'The SwapU team reserves the right of final interpretation of all platform content. We reserve the right to modify platform rules and terms of service at any time. Updated terms take effect immediately upon publication.',
-    footerCopyright: '© 2026 SwapU. All rights reserved. | Info platform only — no transactions',
-    footerText: '© 2026 SwapU · Info platform only — we never handle transactions',
+    footerCopyright: 'Â© 2026 SwapU. All rights reserved. | Info platform only â no transactions',
+    footerText: 'Â© 2026 SwapU Â· Info platform only â we never handle transactions',
   },
 };
 
 const CATEGORIES = [
-  { key: 'all', icon: '🏠' },
-  { key: 'furniture', icon: '🛋️' },
-  { key: 'electronics', icon: '💻' },
-  { key: 'textbooks', icon: '📚' },
-  { key: 'kitchen', icon: '🍳' },
-  { key: 'clothing', icon: '👕' },
-  { key: 'transport', icon: '🚲' },
-  { key: 'daily', icon: '🧴' },
-  { key: 'other', icon: '📦' },
+  { key: 'all', icon: 'ð ' },
+  { key: 'furniture', icon: 'ðï¸' },
+  { key: 'electronics', icon: 'ð»' },
+  { key: 'textbooks', icon: 'ð' },
+  { key: 'kitchen', icon: 'ð³' },
+  { key: 'clothing', icon: 'ð' },
+  { key: 'transport', icon: 'ð²' },
+  { key: 'daily', icon: 'ð§´' },
+  { key: 'other', icon: 'ð¦' },
 ];
 
 const SCHOOLS = [
