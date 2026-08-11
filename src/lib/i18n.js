@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useCallback } from 'react';
 const t = {
   zh: {
     // Nav
-    brand: 'UniSwap',
+    brand: 'SwapU',
     navHome: '首页',
     navBrowse: '浏览',
     navWantToBuy: '求购',
@@ -50,7 +50,7 @@ const t = {
 
     // Philosophy
     philosophyTitle: '我们的理念',
-    philosophySubtitle: '为什么我们要做 UniSwap？',
+    philosophySubtitle: '为什么我们要做 SwapU？',
     phil1Title: '留学生互助',
     phil1Desc: '每年开学季和毕业季，大量实用物品被丢弃。我们相信留学生之间的互助可以让每一件好物找到新主人，让资源不被浪费。',
     phil2Title: '绿色可持续',
@@ -61,7 +61,7 @@ const t = {
     phil4Desc: '所有信息公开透明，没有中间商赚差价。卖家直接展示，买家自主选择，交易方式由双方自行决定。',
 
     // Advantages
-    advantageTitle: '为什么选择 UniSwap？',
+    advantageTitle: '为什么选择 SwapU？',
     advantageSubtitle: '专为留学生设计，解决你的真实需求',
     adv1Title: '完全免费，零佣金',
     adv1Desc: '发布和浏览完全免费，我们不从任何交易中抽取佣金。没有隐藏费用，没有会员制，真正的零成本。',
@@ -74,7 +74,7 @@ const t = {
     adv5Title: '多校覆盖，跨校交换',
     adv5Desc: '覆盖 JHU、UMD、Georgetown 三所高校，支持跨校浏览和信息交换，扩大你的选择范围。',
     adv6Title: '搬家季神器',
-    adv6Desc: '毕业出清还是开学置办？UniSwap 帮你在最需要的时候找到最合适的物品，让搬家不再头疼。',
+    adv6Desc: '毕业出清还是开学置办？SwapU 帮你在最需要的时候找到最合适的物品，让搬家不再头疼。',
 
     // How it works
     howTitle: '如何使用？',
@@ -96,7 +96,7 @@ const t = {
 
     // CTA
     ctaTitle: '开始探索校园好物',
-    ctaDesc: '加入 UniSwap，发现身边留学生社区的好物',
+    ctaDesc: '加入 SwapU，发现身边留学生社区的好物',
     ctaBrowse: '浏览商品',
     ctaPost: '发布商品',
 
@@ -204,10 +204,10 @@ const t = {
 
     // FAQ
     faqTitle: '常见问题',
-    faq1Q: 'UniSwap 是免费的吗？',
-    faq1A: '是的，UniSwap 完全免费。发布和浏览商品不收取任何费用，我们也不从交易中抽取佣金。',
-    faq2Q: 'UniSwap 参与交易吗？',
-    faq2A: '不参与。UniSwap 是一个纯信息平台，我�l只提供买卖双方的信息展示和连接服务。所有交易由双方自行协商和完成，平台不介入也不承担交易相关责任。',
+    faq1Q: 'SwapU 是免费的吗？',
+    faq1A: '是的，SwapU 完全免费。发布和浏览商品不收取任何费用，我们也不从交易中抽取佣金。',
+    faq2Q: 'SwapU 参与交易吗？',
+    faq2A: '不参与。SwapU 是一个纯信息平台，我�l只提供买卖双方的信息展示和连接服务。所有交易由双方自行协商和完成，平台不介入也不承担交易相关责任。',
     faq3Q: '如何联系卖家家？',
     faq3A: '点击商品详情页的"联系卖家"按钮，即可查看对方留下的联系方式。建议优先使用微信或 WhatsApp 沟通。',
     faq4Q: '可以发布哪些类型的商品？',
@@ -218,27 +218,27 @@ const t = {
     faq6A: '我们重视你的隐私。平台仅展示你选择公开的信息，不会向第三方出售或分享你的个人数据。',
 
     // Footer
-    footerAbout: '关于 UniSwap',
-    footerAboutDesc: 'UniSwap 是专为 DMV 地区留学生打造的二手物品信息平台，致力于连接校园社区，让闲置好物重新流转。',
+    footerAbout: '关于 SwapU',
+    footerAboutDesc: 'SwapU 是专为 DMV 地区留学生打造的二手物品信息平台，致力于连接校园社区，让闲置好物重新流转。',
     footerLinks: '快速链接',
     footerContactTitle: '联系我们',
     footerEmailLabel: '邮箱',
     footerPhoneLabel: '电话',
     footerWeChatLabel: '微信公众号',
     footerXhsLabel: '小红书',
-    footerEmail: 'contact@uniswap-dmv.com',
+    footerEmail: 'contact@swapu-dmv.com',
     footerPhone: '+1 (202) 555-0188',
-    footerWeChat: 'UniSwap_Official',
-    footerXhs: '@UniSwap留学生二手',
+    footerWeChat: 'SwapU_Official',
+    footerXhs: '@SwapU留学生二手',
     footerLegalTitle: '法律声明',
-    footerLegalText: 'UniSwap 仅提供信息展示和连接服务，不参与任何实际交易。平台上展示的所有商品信息由用户自行发布，UniSwap 不对商品的真实性、质量、安全性做任何保证或承担任何责任。所有交易行为由买卖双方自行协商完成，与本平台无关。用户使用本平台即表示同意以上条款。',
-    footerRightsText: '本平台所有内容（包括但不限于文字、图片、设计、标识）的知识产权彂 UniSwap 团队所有。未经书面许可，不得转载、复制或用于商业用途。',
-    footerDisclaimerText: '本网站最终解释权彂 UniSwap 团队所有。我们保留随时修改、更新平台规则和服务条款的权利，修改后的条款将在网站公布后立即生效。',
-    footerCopyright: '© 2026 UniSwap. All rights reserved. | 纯信息平台，不参与任何交易',
-    footerText: '© 2026 UniSwap · 纯信息平台，不参与任何交易',
+    footerLegalText: 'SwapU 仅提供信息展示和连接服务，不参与任何实际交易。平台上展示的所有商品信息由用户自行发布，SwapU 不对商品的真实性、质量、安全性做任何保证或承担任何责任。所有交易行为由买卖双方自行协商完成，与本平台无关。用户使用本平台即表示同意以上条款。',
+    footerRightsText: '本平台所有内容（包括但不限于文字、图片、设计、标识）的知识产权彂 SwapU 团队所有。未经书面许可，不得转载、复制或用于商业用途。',
+    footerDisclaimerText: '本网站最终解释权彂 SwapU 团队所有。我们保留随时修改、更新平台规则和服务条款的权利，修改后的条款将在网站公布后立即生效。',
+    footerCopyright: '© 2026 SwapU. All rights reserved. | 纯信息平台，不参与任何交易',
+    footerText: '© 2026 SwapU · 纯信息平台，不参与任何交易',
   },
   en: {
-    brand: 'UniSwap',
+    brand: 'SwapU',
     navHome: 'Home',
     navBrowse: 'Browse',
     navWantToBuy: 'Want to Buy',
@@ -279,7 +279,7 @@ const t = {
     uspSeasonDesc: 'Sell at graduation, shop at move-in',
 
     philosophyTitle: 'Our Philosophy',
-    philosophySubtitle: 'Why did we build UniSwap?',
+    philosophySubtitle: 'Why did we build SwapU?',
     phil1Title: 'Student Mutual Aid',
     phil1Desc: 'Every semester, useful items get thrown away during move-in and move-out. We believe students helping students can give every item a second life and prevent waste.',
     phil2Title: 'Green & Sustainable',
@@ -289,7 +289,7 @@ const t = {
     phil4Title: 'Transparent Info',
     phil4Desc: 'All information is open and transparent. No middlemen, no markups. Sellers show directly, buyers choose freely, and both parties decide how to transact.',
 
-    advantageTitle: 'Why UniSwap?',
+    advantageTitle: 'Why SwapU?',
     advantageSubtitle: 'Designed for students, solving real needs',
     adv1Title: 'Completely Free',
     adv1Desc: 'Posting and browsing are completely free. We never take commissions. No hidden fees, no memberships — truly zero cost.',
@@ -302,7 +302,7 @@ const t = {
     adv5Title: 'Multi-Campus Coverage',
     adv5Desc: 'Covering JHU, UMD, and Georgetown. Browse and exchange across all three schools, expanding your options.',
     adv6Title: 'Moving Season Essential',
-    adv6Desc: 'Graduating or just arriving? UniSwap helps you find what you need, when you need it. No more moving headaches.',
+    adv6Desc: 'Graduating or just arriving? SwapU helps you find what you need, when you need it. No more moving headaches.',
 
     howTitle: 'How It Works',
     howSubtitle: 'Three steps to start your campus secondhand journey',
@@ -320,7 +320,7 @@ const t = {
     schoolsSectionDesc: 'Currently serving international student communities at these DMV-area universities',
 
     ctaTitle: 'Start Exploring Campus Deals',
-    ctaDesc: 'Join UniSwap and discover great finds in your student community',
+    ctaDesc: 'Join SwapU and discover great finds in your student community',
     ctaBrowse: 'Browse Items',
     ctaPost: 'Post an Item',
 
@@ -420,10 +420,10 @@ const t = {
 
     // FAQ
     faqTitle: 'FAQ',
-    faq1Q: 'Is UniSwap free?',
-    faq1A: 'Yes, UniSwap is completely free. We never charge for posting or browsing, and we take no commission from any transaction.',
-    faq2Q: 'Does UniSwap handle transactions?',
-    faq2A: 'No. UniSwap is a pure information platform. We only connect buyers and sellers. All transactions are arranged independently between parties — we do not participate in or bear responsibility for any deals.',
+    faq1Q: 'Is SwapU free?',
+    faq1A: 'Yes, SwapU is completely free. We never charge for posting or browsing, and we take no commission from any transaction.',
+    faq2Q: 'Does SwapU handle transactions?',
+    faq2A: 'No. SwapU is a pure information platform. We only connect buyers and sellers. All transactions are arranged independently between parties — we do not participate in or bear responsibility for any deals.',
     faq3Q: 'How do I contact a seller or buyer?',
     faq3A: 'Click the "Contact Seller" button on an item\'s detail page to see their contact info. We recommend using WeChat or WhatsApp.',
     faq4Q: 'What can I post?',
@@ -434,24 +434,24 @@ const t = {
     faq6A: 'We take your privacy seriously. The platform only displays information you choose to share, and we never sell or share your data with third parties.',
 
     // Footer
-    footerAbout: 'About UniSwap',
-    footerAboutDesc: 'UniSwap is a secondhand goods info platform built for international students in the DMV area, connecting campus communities and keeping great items in circulation.',
+    footerAbout: 'About SwapU',
+    footerAboutDesc: 'SwapU is a secondhand goods info platform built for international students in the DMV area, connecting campus communities and keeping great items in circulation.',
     footerLinks: 'Quick Links',
     footerContactTitle: 'Contact Us',
     footerEmailLabel: 'Email',
     footerPhoneLabel: 'Phone',
     footerWeChatLabel: 'WeChat',
     footerXhsLabel: 'Xiaohongshu',
-    footerEmail: 'contact@uniswap-dmv.com',
+    footerEmail: 'contact@swapu-dmv.com',
     footerPhone: '+1 (202) 555-0188',
-    footerWeChat: 'UniSwap_Official',
-    footerXhs: '@UniSwap',
+    footerWeChat: 'SwapU_Official',
+    footerXhs: '@SwapU',
     footerLegalTitle: 'Legal Disclaimer',
-    footerLegalText: 'UniSwap provides information display and connection services only and does not participate in any actual transactions. All product information is posted by users. UniSwap makes no guarantees regarding the authenticity, quality, or safety of listed items and bears no responsibility for any transactions. All deals are arranged independently between buyers and sellers. By using this platform, you agree to these terms.',
-    footerRightsText: 'All content on this platform, including but not limited to text, images, design, and logos, is the intellectual property of the UniSwap team. Reproduction or commercial use without written permission is prohibited.',
-    footerDisclaimerText: 'The UniSwap team reserves the right of final interpretation of all platform content. We reserve the right to modify platform rules and terms of service at any time. Updated terms take effect immediately upon publication.',
-    footerCopyright: '© 2026 UniSwap. All rights reserved. | Info platform only — no transactions',
-    footerText: '© 2026 UniSwap · Info platform only — we never handle transactions',
+    footerLegalText: 'SwapU provides information display and connection services only and does not participate in any actual transactions. All product information is posted by users. SwapU makes no guarantees regarding the authenticity, quality, or safety of listed items and bears no responsibility for any transactions. All deals are arranged independently between buyers and sellers. By using this platform, you agree to these terms.',
+    footerRightsText: 'All content on this platform, including but not limited to text, images, design, and logos, is the intellectual property of the SwapU team. Reproduction or commercial use without written permission is prohibited.',
+    footerDisclaimerText: 'The SwapU team reserves the right of final interpretation of all platform content. We reserve the right to modify platform rules and terms of service at any time. Updated terms take effect immediately upon publication.',
+    footerCopyright: '© 2026 SwapU. All rights reserved. | Info platform only — no transactions',
+    footerText: '© 2026 SwapU · Info platform only — we never handle transactions',
   },
 };
 
