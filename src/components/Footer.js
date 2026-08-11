@@ -22,8 +22,8 @@ export default function Footer() {
           {/* Column 1: About */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="text-2xl font-black mb-4">
-              <span className="text-white">Uni</span>
-              <span className="text-brand-400">Swap</span>
+              <span className="text-white">Swap</span>
+              <span className="text-brand-400">U</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               {t('footerAboutDesc')}
