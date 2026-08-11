@@ -49,7 +49,7 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4">{t('footerContactTitle')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
-                <span className="text-base mt-0.5">ð§</span>
+                <span className="text-base mt-0.5">📧</span>
                 <div>
                   <div className="text-xs text-gray-500">{t('footerEmailLabel')}</div>
                   <a href={`mailto:${t('footerEmail')}`} className="text-sm text-gray-300 hover:text-white transition-colors">
@@ -58,21 +58,21 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-base mt-0.5">ð±</span>
+                <span className="text-base mt-0.5">📱</span>
                 <div>
                   <div className="text-xs text-gray-500">{t('footerPhoneLabel')}</div>
                   <span className="text-sm">{t('footerPhone')}</span>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-base mt-0.5">ð¬</span>
+                <span className="text-base mt-0.5">💬</span>
                 <div>
                   <div className="text-xs text-gray-500">{t('footerWeChatLabel')}</div>
                   <span className="text-sm">{t('footerWeChat')}</span>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-base mt-0.5">ð</span>
+                <span className="text-base mt-0.5">📕</span>
                 <div>
                   <div className="text-xs text-gray-500">{t('footerXhsLabel')}</div>
                   <span className="text-sm">{t('footerXhs')}</span>
